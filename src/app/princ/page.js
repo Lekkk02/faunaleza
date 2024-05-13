@@ -3,8 +3,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import Principal from "@/components/cardenal/principal";
 import Descripcion from "@/components/cardenal/descripcion";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 const Page = () => {
+  return (
+    <Suspense fallback={<div>Cargando...</div>}>
+      <Content />
+    </Suspense>
+  );
+};
+
+const Content = () => {
   const searchParams = useSearchParams();
   const section = searchParams.get("q");
 
