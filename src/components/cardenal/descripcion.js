@@ -21,14 +21,26 @@ const Descripcion = () => {
             }`}
             onClick={() => setShowComoSoy(true)}
           />
-          <img
-            src={"/descript/Clic_como_soy.png"}
-            className={`h-[160px] w-[260px] mt-[-20px] transition-all duration-500  z-[5] ${
-              showComoSoy
-                ? "opacity-100 translate-y-[-50px]"
-                : "opacity-0 -translate-y-full"
-            } `}
-          />
+          <div className="flex">
+            <img
+              src={"/descript/Clic_como_soy.png"}
+              className={`h-[160px] w-[260px] mt-[-20px] transition-all duration-500  z-[5] ${
+                showComoSoy
+                  ? "opacity-100 translate-y-[-50px]"
+                  : "opacity-0 -translate-y-full"
+              } `}
+            />
+            <Image
+              className={`h-[130px] w-[130px] absolute top-[170px] right-[-40px] transition-all duration-500  z-[5] ${
+                showComoSoy
+                  ? "opacity-100 translate-y-[-50px]"
+                  : "opacity-0 -translate-y-full"
+              } `}
+              src={"/descript/Plumas.gif"}
+              height={50}
+              width={50}
+            />
+          </div>
         </div>
 
         <div className="flex gap-4 relative top-[160px]">
