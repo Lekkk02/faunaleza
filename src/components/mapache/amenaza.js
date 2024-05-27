@@ -106,7 +106,7 @@ const Amenaza = () => {
         <div className="flex flex-col items-center justify-center max-h-[777px]">
           <div className="flex flex-col items-center space-y-0 relative mt-[80px] ">
             <img
-              src={"mapache/amenaza/btnAmenaza.png"}
+              src={"/mapache/amenaza/btnAmenaza.png"}
               className={`relative w-[100px] h-[90px] mt-[20px] z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
                 showAlimentacion
                   ? "opacity-100"
@@ -121,7 +121,7 @@ const Amenaza = () => {
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 -translate-y-full"
                 } `}
-                src={"/mapache/amenaza/subtitulo.png"}
+                src={"/mapache/amenaza/sub.png"}
                 height={220}
                 width={220}
               />
