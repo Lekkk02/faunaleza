@@ -22,8 +22,8 @@ const Page = () => {
           </div>
         </Link>
       </div>
-      <div className="overflow-hidden flex   min-w-1/3 w-1/3 relative right-[-60px] ">
-        <img src="/creditos.png" className="w-[50px] h-[50px] " />
+      <div className="overflow-hidden flex   min-w-1/3 w-1/3 relative items-center justify-end right-[-60px] top-[-30px]   ">
+        <img src="/creditos.png" className="w-[40px] h-[50px] " />
       </div>
 
       <div className="flex flex-col justify-between items-end gap-36 overflow-hidden">
