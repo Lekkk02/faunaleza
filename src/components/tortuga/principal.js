@@ -43,14 +43,12 @@ const Principal = () => {
       </div>
 
       <div className="flex flex-col justify-center items-end gap-36 overflow-x-visible">
-        <Link href={"?q=amenaza"}>
-          <div className="flex flex-row items-center group relative right-[130px]">
-            <p className="relative right-[-15px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#58b434] rounded-l-xl text-white font-[Poppins] text-2xl">
-              Amenaza
-            </p>
-            <img src="/tortuga/btnAmenaza.png" className="w-[125px] " />
-          </div>
-        </Link>
+        <div className="flex flex-row items-center group relative right-[130px]">
+          <p className="relative right-[-15px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#58b434] rounded-l-xl text-white font-[Poppins] text-2xl">
+            Amenaza
+          </p>
+          <img src="/tortuga/btnAmenaza.png" className="w-[125px] " />
+        </div>
 
         <div className="flex flex-row items-center group relative right-[130px]">
           <p className="relative right-[-15px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#58b434] rounded-l-xl text-white font-[Poppins] text-2xl">

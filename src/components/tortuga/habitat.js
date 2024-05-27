@@ -27,7 +27,7 @@ const Habitat = () => {
       <div className="overflow-x-visible  flex flex-col justify-center  items-center  h-[100vh] relative  pt-12 w-1/3 min-w-1/3 max-w-1/3 ">
         <div className="flex">
           <img
-            src={"/tortuga/habitat/TITULO.png"}
+            src={"/tortuga/habitat/titulo.png"}
             className="w-[250px] h-[120px]   "
           />
         </div>
@@ -39,7 +39,7 @@ const Habitat = () => {
         </div>
         <div className="flex  gap-4 justify-center items-center mb-[-10px] mt-[-30px]">
           <img
-            src={"/tortuga/descripcion/Retroceder.png"}
+            src={"/tortuga/descripcion/retroceder.png"}
             className="w-auto h-[90px] relative top-[10px] "
           />
           <Link href={"?q="}>
@@ -50,7 +50,7 @@ const Habitat = () => {
           </Link>
 
           <img
-            src={"/tortuga/descripcion/Avanzar.png"}
+            src={"/tortuga/descripcion/avanzar.png"}
             className="w-auto h-[90px]  relative top-[10px]"
           />
         </div>

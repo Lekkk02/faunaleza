@@ -13,7 +13,7 @@ const Amenaza = () => {
       <div className="flex flex-row items-start  justify-center  min-w-1/3 max-w-1/3 w-1/3 min-h-screen">
         <div className="flex flex-col items-center     ">
           <img
-            src={"mapache/amenaza/BotonAmenaza.png"}
+            src={"mapache/amenaza/botonAmenaza.png"}
             className={`relative w-[150px] h-[150px] mt-[60px]  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
               showAmenaz
                 ? "translate-y-[-50px] transition-all"
