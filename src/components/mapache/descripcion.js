@@ -148,7 +148,7 @@ const Descripcion = () => {
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 -translate-y-full"
                 } `}
-                src={"/mapache/descripcion/graftorta.gif"}
+                src={"/mapache/descripcion/grafTorta.gif"}
                 height={220}
                 width={220}
               />

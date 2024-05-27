@@ -13,7 +13,7 @@ const Amenaza = () => {
       <div className="flex flex-row items-start  justify-center  min-w-1/3 max-w-1/3 w-1/3 min-h-screen">
         <div className="flex flex-col items-center     ">
           <img
-            src={"mapache/amenaza/botonAmenaza.png"}
+            src={"mapache/amenaza/BotonAmenaza.png"}
             className={`relative w-[150px] h-[150px] mt-[60px]  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
               showAmenaz
                 ? "translate-y-[-50px] transition-all"
@@ -38,7 +38,7 @@ const Amenaza = () => {
       <div className=" flex flex-col justify-between  items-center  h-[100vh] relative  pt-12 w-1/3 min-w-1/3 max-w-1/3 ">
         <div className="flex">
           <img
-            src={"mapache/amenaza/TITULO.png"}
+            src={"mapache/amenaza/titulo.png"}
             className="w-[340px] h-[100px]   "
           />
         </div>
@@ -60,7 +60,7 @@ const Amenaza = () => {
                     ? "opacity-100 translate-y-[-50px]"
                     : "opacity-0 -translate-y-full"
                 }`}
-                src={"/mapache/amenaza/dani.gif"}
+                src={"/mapache/amenaza/Dani.gif"}
                 height={320}
                 width={320}
               />
@@ -70,7 +70,7 @@ const Amenaza = () => {
                     ? "opacity-100 translate-y-[-50px]"
                     : "opacity-0 -translate-y-full"
                 }`}
-                src={"/mapache/amenaza/prohibido.gif"}
+                src={"/mapache/amenaza/Prohibido.gif"}
                 height={320}
                 width={320}
               />

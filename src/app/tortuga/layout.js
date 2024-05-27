@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
             zIndex: 1,
           }}
         >
-          <source src={"/tortuga/escenario.mp4"} type="video/mp4" />
+          <source src={"/tortuga/Escenario.mp4"} type="video/mp4" />
         </video>
         <div style={{ position: "relative", zIndex: 2, flex: 1 }}>
           {children}

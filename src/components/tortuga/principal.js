@@ -24,7 +24,7 @@ const Principal = () => {
       <div className="overflow-hidden flex flex-col justify-center max-w-[700px] items-center h-[100vh] pt-24 flex-[1_0_auto]">
         <div className="flex">
           <img
-            src={"/tortuga/TITULO.png"}
+            src={"/tortuga/titulo.png"}
             className="w-auto h-[120px] relative top-[-175px] "
           />
         </div>
@@ -36,7 +36,7 @@ const Principal = () => {
             width={350}
           />
           <img
-            src={"/tortuga/NOMBRE.png"}
+            src={"/tortuga/nombre.png"}
             className="relative right-[2px] top-[-150px] h-[280px] w-[230px]"
           />
         </div>

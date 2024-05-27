@@ -23,7 +23,7 @@ const Descripcion = () => {
           />
           <div className="">
             <img
-              src={"/tortuga/descripcion/Clic_como_soy.png"}
+              src={"/tortuga/descripcion/clic_como_soy.png"}
               className={`h-[240px] w-[340px]  mt-[-60px] left-[10px] relative transition-all duration-500  z-[5] ${
                 showComoSoy
                   ? "opacity-100 translate-y-[-50px]"
@@ -93,13 +93,13 @@ const Descripcion = () => {
             className="w-[340px] h-[100px] relative top-[-50px] mb-[-15px] "
           />
           <img
-            src={"/tortuga/descripcion/Prev_video.png"}
+            src={"/tortuga/descripcion/prev_video.png"}
             className="w-full h-[290px] relative top-[-55px] mt-[-25px] "
           />
         </div>
         <div className="flex  gap-4 justify-center items-center mb-[-10px] mt-[-30px]">
           <img
-            src={"/tortuga/descripcion/Retroceder.png"}
+            src={"/tortuga/descripcion/retroceder.png"}
             className="w-auto h-[90px] relative top-[10px] "
           />
           <Link href={"?q="}>
@@ -110,7 +110,7 @@ const Descripcion = () => {
           </Link>
 
           <img
-            src={"/tortuga/descripcion/Avanzar.png"}
+            src={"/tortuga/descripcion/avanzar.png"}
             className="w-auto h-[90px]  relative top-[10px]"
           />
         </div>
