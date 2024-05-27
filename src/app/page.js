@@ -4,50 +4,40 @@ import Principal from "@/components/cardenal/principal";
 import Descripcion from "@/components/cardenal/descripcion";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Page = () => {
   return (
-    <Suspense fallback={<div>Cargando...</div>}>
-      <Content />
-    </Suspense>
-  );
-};
+    <div className="flex justify-between">
+      <div className="flex flex-col justify-between gap-36">
+        <Link href={"/mapache"}>
+          <div className="flex items-center group">
+            <img src="/btnMapache.png" className="w-[300px] " />
+          </div>
+        </Link>
+        <Link href={"/tortuga"}>
+          <div className="flex items-center group">
+            <img src="/btnTortuga.png" className="w-[300px] " />
+          </div>
+        </Link>
+      </div>
+      <div className="overflow-hidden flex flex-row justify-end items-center  min-w-1/3 w-1/3 relative right-[-60px] pt-24">
+        <img src="/creditos.png" className="w-[50px]  " />
+      </div>
 
-const Content = () => {
-  const searchParams = useSearchParams();
-  const section = searchParams.get("q");
+      <div className="flex flex-col justify-between items-end gap-36 overflow-hidden">
+        <Link href={"/cardenalito"}>
+          <div className="flex flex-row items-center group">
+            <img src="/btnCardenalito.png" className="w-[300px] " />
+          </div>
+        </Link>
 
-  return (
-    <AnimatePresence mode="wait">
-      {(() => {
-        switch (section) {
-          case "descript":
-            return (
-              <motion.div
-                key="descripcion"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                <Descripcion />
-              </motion.div>
-            );
-          case null:
-          default:
-            return (
-              <motion.div
-                key="principal"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Principal />
-              </motion.div>
-            );
-        }
-      })()}
-    </AnimatePresence>
+        <div className="flex flex-row items-center group">
+          <img src="/btnManati.png" className="w-[300px] " />
+        </div>
+      </div>
+    </div>
   );
 };
 
