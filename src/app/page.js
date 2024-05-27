@@ -9,8 +9,8 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div className="flex justify-between">
-      <div className="flex flex-col justify-between gap-36">
+    <div className="flex justify-between h-screen">
+      <div className="flex flex-col justify-between gap-36 ">
         <Link href={"/mapache"}>
           <div className="flex items-center group">
             <img src="/btnMapache.png" className="w-[300px] " />
@@ -22,8 +22,8 @@ const Page = () => {
           </div>
         </Link>
       </div>
-      <div className="overflow-hidden flex flex-row justify-end items-center  min-w-1/3 w-1/3 relative right-[-60px] pt-24">
-        <img src="/creditos.png" className="w-[50px]  " />
+      <div className="overflow-hidden flex   min-w-1/3 w-1/3 relative right-[-60px] ">
+        <img src="/creditos.png" className="w-[50px] h-[50px] " />
       </div>
 
       <div className="flex flex-col justify-between items-end gap-36 overflow-hidden">
