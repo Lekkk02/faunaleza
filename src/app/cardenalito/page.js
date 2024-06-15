@@ -2,6 +2,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Principal from "@/components/cardenal/principal";
 import Descripcion from "@/components/cardenal/descripcion";
+import Habitat from "@/components/cardenal/habitat";
+import Amenaza from "@/components/cardenal/amenaza";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -30,6 +32,28 @@ const Content = () => {
                 exit={{ opacity: 0 }}
               >
                 <Descripcion />
+              </motion.div>
+            );
+          case "habitat":
+            return (
+              <motion.div
+                key="habitat"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <Habitat />
+              </motion.div>
+            );
+          case "amenaza":
+            return (
+              <motion.div
+                key="habitat"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <Amenaza />
               </motion.div>
             );
           case null:

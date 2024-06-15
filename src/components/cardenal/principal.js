@@ -12,13 +12,14 @@ const Principal = () => {
             </p>
           </div>
         </Link>
-
-        <div className="flex items-center group">
-          <img src="/descript/ramahabitat.png" className="w-[300px] " />
-          <p className="relative top-[-14px] opacity-0 transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-r-xl text-white font-[Poppins] text-2xl">
-            Habitat
-          </p>
-        </div>
+        <Link href={"?q=habitat"}>
+          <div className="flex items-center group">
+            <img src="/descript/ramahabitat.png" className="w-[300px] " />
+            <p className="relative top-[-14px] opacity-0 transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-r-xl text-white font-[Poppins] text-2xl">
+              Habitat
+            </p>
+          </div>
+        </Link>
       </div>
       <div className="overflow-hidden flex flex-col justify-center items-center h-[100vh] pt-24">
         <div className="flex">
@@ -37,12 +38,15 @@ const Principal = () => {
       </div>
 
       <div className="flex flex-col justify-center items-end gap-36 overflow-hidden">
-        <div className="flex flex-row items-center group">
-          <p className="relative top-[14px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
-            Amenaza
-          </p>
-          <img src="/descript/ramaamenaza2.png" className="w-[300px] " />
-        </div>
+        <Link href={"?q=amenaza"}>
+          <div className="flex flex-row items-center group">
+            <p className="relative top-[14px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
+              Amenaza
+            </p>
+            <img src="/descript/ramaamenaza2.png" className="w-[300px] " />
+          </div>
+        </Link>
+
         <div className="flex flex-row items-center group">
           <p className="relative top-[-32px] opacity-0 transform  transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
             Juego

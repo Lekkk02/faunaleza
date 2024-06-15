@@ -9,32 +9,33 @@ import Image from "next/image";
 
 const Page = () => {
   return (
-    <div className="flex justify-between h-screen">
-      <div className="flex flex-col justify-between gap-36 ">
+    <div className="flex justify-between h-screen ">
+      <div className="flex flex-col justify-between gap-10">
         <Link href={"/mapache"}>
           <div className="flex items-center group">
-            <img src="/btnMapache.png" className="w-[300px] " />
+            <img src="/btnMapache.png" className="w-[30vw] max-w-[300px]" />
           </div>
         </Link>
         <Link href={"/tortuga"}>
           <div className="flex items-center group">
-            <img src="/btnTortuga.png" className="w-[300px] " />
+            <img src="/btnTortuga.png" className="w-[30vw] max-w-[300px]" />
           </div>
         </Link>
       </div>
-      <div className="overflow-hidden flex   min-w-1/3 w-1/3 relative items-center justify-end right-[-60px] top-[-30px]   ">
-        <img src="/creditos.png" className="w-[40px] h-[50px] " />
+      <div className="overflow-hidden flex items-center justify-center relative">
+        <img
+          src="/creditos.png"
+          className="w-[4vw] h-[5vh] max-w-[40px] max-h-[50px]"
+        />
       </div>
-
-      <div className="flex flex-col justify-between items-end gap-36 overflow-hidden">
+      <div className="flex flex-col justify-between items-end gap-10">
         <Link href={"/cardenalito"}>
           <div className="flex flex-row items-center group">
-            <img src="/btnCardenalito.png" className="w-[300px] " />
+            <img src="/btnCardenalito.png" className="w-[30vw] max-w-[300px]" />
           </div>
         </Link>
-
         <div className="flex flex-row items-center group">
-          <img src="/btnManati.png" className="w-[300px] " />
+          <img src="/btnManati.png" className="w-[30vw] max-w-[300px]" />
         </div>
       </div>
     </div>
