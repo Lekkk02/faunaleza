@@ -87,3 +87,65 @@
     top: -6vw;
     background-color: transparent;
 }
+
+
+
+
+
+.flecha-container-right {
+    display: flex;
+    position: absolute;
+    left: -20vw;
+    top: 4vw;
+}
+
+.ojo-flecha-1 {
+    width: 29vw;
+    left: -9vw;
+}
+
+.ojo-flecha-2 {
+    position: relative;
+    left: -38vw;
+    width: 1vw;
+    height: 1vw;
+    z-index: 2;
+    border-radius: 50%;
+    top: -0.5vw;
+}
+
+
+.ala-flecha-1 {
+    left: -6vw;
+    width: 26vw;
+
+}
+
+.ala-flecha-2 {
+    left: -33vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    top: -.75vh;
+}
+
+.cola-flecha-1 {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    top: 0.5vw;
+    left: 3vw;
+}
+
+.cola-flecha-2.input-line {
+    width: 12vw;
+    left: 3vw;
+    top: 1vw;
+}
+
+.cola-flecha-3.input-line {
+    width: 4.8vw;
+    transform: rotate(345deg);
+    left: 2.29vw;
+    top: .4vw;
+}

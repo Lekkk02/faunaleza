@@ -89,3 +89,46 @@ p.draggable {
     left: 18vw;
     top: 8vh;
 }
+
+
+.titlecontainer {
+    flex-direction: column;
+    gap: 25px;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.titlecontainer  * {
+    max-width: 17.5vw;
+}
+
+.terminar {
+    max-width: 7vw;
+    margin-top: 3vw;
+  }
+
+.game_input_container.rejected .input-line {
+background-color: red;
+}
+
+.game_input_container.rejected .container.secondary-container { 
+    border-color: red;
+}
+
+.game_input_container.approved .input-line {
+    background-color: darkgreen;
+    }
+    
+    .game_input_container.approved .container.secondary-container { 
+        border-color: darkgreen;
+    }
+
+    .terminar {
+        cursor: pointer
+    }
