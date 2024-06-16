@@ -34,9 +34,11 @@ const Page = () => {
             <img src="/btnCardenalito.png" className="w-[30vw] max-w-[300px]" />
           </div>
         </Link>
-        <div className="flex flex-row items-center group">
-          <img src="/btnManati.png" className="w-[30vw] max-w-[300px]" />
-        </div>
+        <Link href={"/manati"}>
+          <div className="flex flex-row items-center group">
+            <img src="/btnManati.png" className="w-[30vw] max-w-[300px]" />
+          </div>
+        </Link>
       </div>
     </div>
   );
