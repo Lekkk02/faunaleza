@@ -1,23 +1,52 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { useRouter } from "next/navigation";
 const Descripcion = () => {
   const [showHeart, setShowHeart] = useState(false);
   const [showComoSoy, setShowComoSoy] = useState(false);
   const [showAlimentacion, setShowAlimentacion] = useState(false);
   const [showHuevito, setShowHuevito] = useState(false);
-
+  const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
   return (
     <>
-      <div className="flex absolute top-4 left-4">
+      <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={"/tito/menu/menu.png"}
-          className="w-auto h-[80px] mt-[10px] relative "
+          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
+            setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
           }}
         />
+        <div
+          className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+            showMenu ? "max-h-[250px]" : "max-h-0"
+          }`}
+        >
+          <img
+            src={"/tortuga/btnTortuga.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/tortuga");
+            }}
+          />
+          <img
+            src={"/tortuga/btnManati.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/manati");
+            }}
+          />
+          <img
+            src={"/tortuga/btnMapache.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/mapache");
+            }}
+          />
+        </div>
       </div>
       <div className="flex justify-between overflow-hidden">
         <div className="flex flex-col items-center justify-center min-h-[100vh] w-[25vw] min-w-[25vw] max-w-[25vw]">
@@ -101,27 +130,45 @@ const Descripcion = () => {
               src={"/descript/quiensoy.png"}
               className="w-[260px] h-[50px] relative top-[-50px] "
             />
-            <img
-              src={"/descript/Prevvideo.png"}
-              className="w-[32vw] h-[250px] relative top-[-55px]"
-            />
+            <div className="w-[35vw] top-[-55px] min-w-[35vw] h-[35vh] min-h-[35vh] border-[5px] border-orange-500 rounded-3xl relative overflow-hidden">
+              <video
+                controls
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              >
+                <source src="/tito/descr/her.mp4" />
+              </video>
+            </div>
+
+            {/*    <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/CXDv_oH-XYQ?si=p717bgg2CSnmdKK6"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe> */}
           </div>
           <div className="flex mb-16 gap-8">
-            <img
-              src={"/descript/Retroceder.png"}
-              className="w-auto h-[60px] mt-[10px] relative "
-            />
+            <Link href={"?q="}>
+              <img
+                src={"/descript/Retroceder.png"}
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+              />
+            </Link>
             <Link href={"?q="}>
               <img
                 src={"/descript/Inicio.png"}
                 className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
-
-            <img
-              src={"/descript/Avanzar.png"}
-              className="w-auto h-[60px] mt-[10px] relative "
-            />
+            <Link href={"?q=habitat"}>
+              <img
+                src={"/descript/Avanzar.png"}
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+              />
+            </Link>
           </div>
         </div>
         {/*                        SECCION DERECHA - ALIMENTACIO

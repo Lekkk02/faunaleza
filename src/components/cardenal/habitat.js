@@ -1,23 +1,52 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
+import { useRouter } from "next/navigation";
 const Habitat = () => {
   const [showHeart, setShowHeart] = useState(false);
   const [showComoSoy, setShowComoSoy] = useState(false);
   const [showAlimentacion, setShowAlimentacion] = useState(false);
   const [showHuevito, setShowHuevito] = useState(false);
-
+  const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
   return (
     <>
-      <div className="flex absolute top-4 left-4 z-50">
+      <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={"/tito/menu/menu.png"}
-          className="w-auto h-[80px] mt-[10px] relative "
+          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
+            setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
           }}
         />
+        <div
+          className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+            showMenu ? "max-h-[250px]" : "max-h-0"
+          }`}
+        >
+          <img
+            src={"/tortuga/btnTortuga.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/tortuga");
+            }}
+          />
+          <img
+            src={"/tortuga/btnManati.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/manati");
+            }}
+          />
+          <img
+            src={"/tortuga/btnMapache.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/mapache");
+            }}
+          />
+        </div>
       </div>
       <div className="relative  ">
         <img
@@ -44,10 +73,10 @@ const Habitat = () => {
             />
           </div>
 
-          <div className="flex top-[-55px] flex-1 relative items-center justify-center ">
+          <div className="flex  flex-1 relative items-center justify-center ">
             <img
               src="/tito/hab/ubi1.png"
-              className={`w-[35vw] min-w-[35vw] h-[50vh] min-h-[50vh] z-10  left-[160px] relative  transition-all duration-500 ease-in-out ${
+              className={`w-[20vw] min-w-[20vw] h-[35vh] min-h-[35vh] z-10  left-[60px] relative  transition-all duration-500 ease-in-out ${
                 showComoSoy
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 -translate-x-full"
@@ -64,34 +93,85 @@ const Habitat = () => {
               className="w-auto h-[80px] mt-[10px] relative "
             />
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center relative top-[40px]">
             <img
               src={"/tito/hab/mapa1.png"}
-              className="w-[32vw] h-[250px] min-h-[50vh] relative "
+              className={`w-[32vw] h-[250px] min-h-[50vh] relative ${
+                showComoSoy || showAlimentacion ? "hidden" : "flex"
+              } `}
             />
+            <img
+              src={"/tito/hab/mapa_ubi1.png"}
+              className={` relative ${
+                showComoSoy && !showAlimentacion
+                  ? "w-[32vw] h-[250px] min-h-[50vh] opacity-100"
+                  : "opacity-0 w-0 h-0"
+              } `}
+            />
+            <img
+              src={"/tito/hab/mapa_ubi2.png"}
+              className={` relative ${
+                !showComoSoy && showAlimentacion
+                  ? "w-[32vw] h-[250px] min-h-[50vh] opacity-100"
+                  : "opacity-0 w-0 h-0"
+              } `}
+            />
+            <img
+              src={"/tito/hab/mapa_all.png"}
+              className={` relative ${
+                showComoSoy && showAlimentacion
+                  ? "w-[32vw] h-[250px] min-h-[50vh] opacity-100"
+                  : "opacity-0 w-0 h-0"
+              } `}
+            />
+            <div className="relative right-[100px] flex flex-1 ">
+              <img
+                src={"/tito/hab/btnTermometro.png"}
+                className={`self-start items-start justify-start ${
+                  showHuevito
+                    ? "opacity-0 h-0 w-0"
+                    : "w-[4vw] min-w-[4vw] h-[16vh] min-h-[16vh] relative top-[-100px] transition-all duration-500 ease-in-out hover:cursor-pointer hover:scale-[1.2]"
+                }
+               `}
+                onClick={() => setShowHuevito(true)}
+              />
+              <Image
+                src={"/tito/hab/termo.gif"}
+                className={` transition-all duration-500 ease-in-out ${
+                  showHuevito
+                    ? "opacity-100 w-[12vw] min-w-[12vw] h-[16vh] min-h-[16vh] relative top-[-100px]"
+                    : " opacity-0 w-0 h-0"
+                }               `}
+                height={50}
+                width={50}
+              />
+            </div>
           </div>
           <div className="flex mb-16 gap-8">
-            <img
-              src={"/descript/Retroceder.png"}
-              className="w-auto h-[60px] mt-[10px] relative "
-            />
+            <Link href={"?q=descript"}>
+              <img
+                src={"/descript/Retroceder.png"}
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500 z-50"
+              />
+            </Link>
             <Link href={"?q="}>
               <img
                 src={"/descript/Inicio.png"}
-                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500 z-50"
               />
             </Link>
-
-            <img
-              src={"/descript/Avanzar.png"}
-              className="w-auto h-[60px] mt-[10px] relative "
-            />
+            <Link href={"?q=amenaza"}>
+              <img
+                src={"/descript/Avanzar.png"}
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500 z-50"
+              />
+            </Link>
           </div>
         </div>
         {/*                        SECCION DERECHA - ALIMENTACIO
          */}{" "}
         <div className="flex justify-between overflow-visible w-[25vw] min-w-[25vw] max-w-[25vw] h-[100vh]">
-          <div className="flex flex-col items-center justify-between max-h-[100vh]">
+          <div className="flex flex-col items-center justify-center max-h-[100vh]">
             <div className="flex flex-col items-center justify-center space-y-4 min-h-[50vh]">
               <img
                 src={"/tito/hab/btn_pob.png"}
@@ -106,7 +186,7 @@ const Habitat = () => {
               <div className="flex flex-col">
                 <Image
                   src={"/tito/hab/graf_barras.gif"}
-                  className={` relative right-[140px] z-[5] transition-all duration-500 ease-in-out ${
+                  className={` relative right-[80px] z-[5] transition-all duration-500 ease-in-out ${
                     showAlimentacion
                       ? "opacity-100 translate-y-0 h-[40vh] w-[25-vw] min-w-[25vw] min-h-[40vh] "
                       : "opacity-0 -translate-y-full h-0 w-0"
@@ -114,24 +194,14 @@ const Habitat = () => {
                   height={80}
                   width={180}
                 />
-                {/*      <Image
-                src={"/descript/semillas.gif"}
-                className={`h-[120px] w-[120px] relative right-[-100px] transition-all duration-500 ease-in-out ${
-                  showAlimentacion
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 -translate-y-full"
-                } `}
-                height={80}
-                width={80}
-              /> */}
               </div>
             </div>
 
-            <div className="flex  relative right-[300px] ">
-              <div className="flex top-[-55px] flex-1 relative items-center justify-center ">
+            <div className="flex  relative right-[80px] ">
+              <div className="flex  flex-1 relative items-center justify-center ">
                 <img
                   src="/tito/hab/ubi2.png"
-                  className={`w-[35vw] min-w-[35vw] h-[50vh] min-h-[50vh] z-10   relative  transition-all duration-500 ease-in-out ${
+                  className={`w-[20vw] min-w-[20vw] h-[35vh] min-h-[35vh] z-10   relative  transition-all duration-500 ease-in-out ${
                     showAlimentacion
                       ? "opacity-100 translate-x-0"
                       : "opacity-0 -translate-x-full"
