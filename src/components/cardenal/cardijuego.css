@@ -1,0 +1,151 @@
+
+
+
+.input-line {
+    position: relative;
+}
+
+.pico-flecha-3 {
+    top: -9vw;
+    left: -4vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    z-index: 1;
+}
+.pico-flechas {
+    left: 18vw;
+    top: 8vh;
+}
+
+.pico-flecha-1 {
+    width: 8vw;
+}
+
+.pico-flecha-2 {
+    width: 14vw;
+    transform: rotate(322deg);
+    top: -4.5vw;
+    left: -1.75vw;
+}
+
+.pico-flecha-1 {
+    top: -0.60vh;
+}
+
+
+
+
+.pata-flecha-1 {
+    width: 26vw;
+}
+
+.pata-flechas {
+    top: 8vh;
+}
+
+.pata-flecha-2 {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    top: -0.5vw;
+    left: -0.5vw;
+    z-index: 2;
+}
+
+
+
+
+
+
+.pluma-flecha-1 {
+    width: 8vw;
+}
+
+.pluma-flecha-2 {
+        width: 10vw;
+        transform: rotate(338deg);
+        top: -1.8vw;
+        left: -0.65vw;
+        z-index: 2;
+}
+
+.pluma-flecha-3 {
+    top: -4.25vw;
+    left: -1.25vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pluma {
+    position: absolute;
+    width: 6vw;
+    height: auto;
+    left: 15vw;
+    top: -6vw;
+    background-color: transparent;
+}
+
+
+
+
+
+.flecha-container-right {
+    display: flex;
+    position: absolute;
+    left: -20vw;
+    top: 4vw;
+}
+
+.ojo-flecha-1 {
+    width: 29vw;
+    left: -9vw;
+}
+
+.ojo-flecha-2 {
+    position: relative;
+    left: -38vw;
+    width: 1vw;
+    height: 1vw;
+    z-index: 2;
+    border-radius: 50%;
+    top: -0.5vw;
+}
+
+
+.ala-flecha-1 {
+    left: -6vw;
+    width: 26vw;
+
+}
+
+.ala-flecha-2 {
+    left: -33vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    top: -.75vh;
+}
+
+.cola-flecha-1 {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    top: 0.5vw;
+    left: 3vw;
+}
+
+.cola-flecha-2.input-line {
+    width: 12vw;
+    left: 3vw;
+    top: 1vw;
+}
+
+.cola-flecha-3.input-line {
+    width: 4.8vw;
+    transform: rotate(345deg);
+    left: 2.29vw;
+    top: .4vw;
+}
