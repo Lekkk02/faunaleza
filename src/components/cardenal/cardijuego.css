@@ -52,3 +52,38 @@
     left: -0.5vw;
     z-index: 2;
 }
+
+
+
+
+
+
+.pluma-flecha-1 {
+    width: 8vw;
+}
+
+.pluma-flecha-2 {
+        width: 10vw;
+        transform: rotate(338deg);
+        top: -1.8vw;
+        left: -0.65vw;
+        z-index: 2;
+}
+
+.pluma-flecha-3 {
+    top: -4.25vw;
+    left: -1.25vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pluma {
+    position: absolute;
+    width: 6vw;
+    height: auto;
+    left: 15vw;
+    top: -6vw;
+    background-color: transparent;
+}

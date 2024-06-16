@@ -62,6 +62,13 @@ const Juego = () => {
         <div className="pluma-flecha-1 input-line"></div>
         <div className="pluma-flecha-2 input-line"></div>
         <div className="pluma-flecha-3 input-line"></div>
+        <Image
+              src={"/pluma.png"}
+              className="pluma"
+              height={50}
+              width={50}
+              onClick={() => setShowComoSoy(true)}
+            />
         </div>
         <div className="container secondary-container" ishouldhave="Pluma"></div>
         </div>
