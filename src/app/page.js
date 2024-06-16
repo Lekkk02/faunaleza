@@ -22,12 +22,7 @@ const Page = () => {
           </div>
         </Link>
       </div>
-      <div className="overflow-hidden flex items-center justify-center relative">
-        <img
-          src="/creditos.png"
-          className="w-[4vw] h-[5vh] max-w-[40px] max-h-[50px]"
-        />
-      </div>
+      <div className="overflow-hidden flex items-center justify-center relative"></div>
       <div className="flex flex-col justify-between items-end gap-10">
         <Link href={"/cardenalito"}>
           <div className="flex flex-row items-center group">

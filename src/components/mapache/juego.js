@@ -11,13 +11,13 @@ const Juego = () => {
   return (
     <>
       <div className="mapajuego flex absolute top-4 left-4 z-50 titlecontainer">
-        <Image src={"/mapache/tile.png"} className="juego_titulo" />
+        <img src={"/mapache/tile.png"} className="juego_titulo" />
       </div>
       <div className="mapajuego flex justify-between overflow-hidden cardinalgame">
         <div class="flex min-h-[100vh] flex-col min-w-[100vw]">
           <div class="flex min-h-[20vh] min-w-[100vw]">
             <div class="container  main-container">
-            <p className="draggable" draggable="true" myvalue="Pata">
+              <p className="draggable" draggable="true" myvalue="Pata">
                 Pata
               </p>
               <p className="draggable" draggable="true" myvalue="Ojo">
@@ -48,15 +48,15 @@ const Juego = () => {
                 ></div>
               </div>
               <div className="game_input_container">
-                  <div className="cola-flechas flecha-container">
-                    <div className="cola-flecha-1 input-line"></div>
-                    <div className="cola-flecha-2 input-line"></div>
-                  </div>
-                  <div
-                    className="container secondary-container"
-                    ishouldhave="Cola"
-                  ></div>
+                <div className="cola-flechas flecha-container">
+                  <div className="cola-flecha-1 input-line"></div>
+                  <div className="cola-flecha-2 input-line"></div>
                 </div>
+                <div
+                  className="container secondary-container"
+                  ishouldhave="Cola"
+                ></div>
+              </div>
               <div className="game_input_container">
                 <div className="pata-flechas flecha-container">
                   <div className="pata-flecha-1 input-line"></div>
@@ -121,10 +121,7 @@ const Juego = () => {
                     ishouldhave="Ojo"
                   ></div>
                 </div>
-                <Image
-              src={"/terminar.png"}
-              className="terminar "
-            />
+                <img src={"/terminar.png"} className="terminar " />
               </div>{" "}
             </div>
           </div>

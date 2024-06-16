@@ -147,21 +147,24 @@ const Amenaza = () => {
           </div>
 
           <div className="flex  gap-8">
-            <img
-              src={"/descript/Retroceder.png"}
-              className="w-auto h-[60px]  relative "
-            />
+            <Link href={"?q=habitat"}>
+              <img
+                src={"/descript/Retroceder.png"}
+                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+              />
+            </Link>
             <Link href={"?q="}>
               <img
                 src={"/descript/Inicio.png"}
                 className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
-
-            <img
-              src={"/descript/Avanzar.png"}
-              className="w-auto h-[60px]  relative "
-            />
+            <Link href={"?q=juego"}>
+              <img
+                src={"/descript/Avanzar.png"}
+                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+              />
+            </Link>
           </div>
         </div>
       </div>
