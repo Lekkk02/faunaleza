@@ -80,25 +80,26 @@ const Principal = () => {
           </div>
         </div>
 
-      <div className="flex flex-col justify-center items-end gap-36 overflow-hidden">
-        <Link href={"?q=amenaza"}>
-          <div className="flex flex-row items-center group">
-            <p className="relative top-[14px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
-              Amenaza
-            </p>
-            <img src="/descript/ramaamenaza2.png" className="w-[300px] " />
-          </div>
-        </Link>
-        <Link href={"?q=juego"}>
-        <div className="flex flex-row items-center group">
-          <p className="relative top-[-32px] opacity-0 transform  transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
-            Juego
-          </p>
-          <img src="/descript/ramajuego.png" className="w-[300px] " />
+        <div className="flex flex-col justify-center items-end gap-36 overflow-hidden">
+          <Link href={"?q=amenaza"}>
+            <div className="flex flex-row items-center group">
+              <p className="relative top-[14px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
+                Amenaza
+              </p>
+              <img src="/descript/ramaamenaza2.png" className="w-[300px] " />
+            </div>
+          </Link>
+          <Link href={"?q=juego"}>
+            <div className="flex flex-row items-center group">
+              <p className="relative top-[-32px] opacity-0 transform  transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
+                Juego
+              </p>
+              <img src="/descript/ramajuego.png" className="w-[300px] " />
+            </div>
+          </Link>
         </div>
-        </Link>
       </div>
-    </div>
+    </>
   );
 };
 
