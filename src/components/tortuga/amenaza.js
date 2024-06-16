@@ -13,7 +13,7 @@ const Amenaza = () => {
     <>
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
-          src={"/tito/menu/menu.png"}
+          src={"/tortuga/menu.png"}
           className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);

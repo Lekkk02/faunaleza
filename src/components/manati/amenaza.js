@@ -12,6 +12,32 @@ const Amenaza = () => {
   const router = useRouter();
   return (
     <>
+      <div
+        style={{
+          position: "absolute",
+          width: "100vw",
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: 0,
+          }}
+        >
+          <source src={"/manati/amenaza/fondo.mp4"} type="video/mp4" />
+        </video>
+      </div>
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={"/manati/menu.png"}
@@ -98,7 +124,7 @@ const Amenaza = () => {
             />
             <Image
               src={"/manati/amenaza/manati.gif"}
-              className="w-[30vw] min-w[30vw] h-[25vh] min-h-[25vh]"
+              className="w-[30vw] min-w[30vw] h-[25vh] min-h-[25vh] z-10"
               width={50}
               height={50}
             />
