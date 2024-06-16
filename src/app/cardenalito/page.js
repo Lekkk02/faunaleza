@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Principal from "@/components/cardenal/principal";
 import Descripcion from "@/components/cardenal/descripcion";
 import Habitat from "@/components/cardenal/habitat";
+import Juego from "@/components/cardenal/juego";
 import Amenaza from "@/components/cardenal/amenaza";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
@@ -56,6 +57,17 @@ const Content = () => {
                 <Amenaza />
               </motion.div>
             );
+            case "juego":
+              return (
+                <motion.div
+                  key="juego"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Juego />
+                </motion.div>
+              );
           case null:
           default:
             return (

@@ -1,62 +1,125 @@
 import Image from "next/image";
 import Link from "next/link";
-const Principal = () => {
-  return (
-    <div className="flex justify-between">
-      <div className="flex flex-col justify-center gap-36">
-        <Link href={"?q=descript"}>
-          <div className="flex items-center group">
-            <img src="/descript/ramadescripcion.png" className="w-[300px] " />
-            <p className="opacity-0 transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-r-xl text-white font-[Poppins] text-2xl">
-              Descripción
-            </p>
-          </div>
-        </Link>
-        <Link href={"?q=habitat"}>
-          <div className="flex items-center group">
-            <img src="/descript/ramahabitat.png" className="w-[300px] " />
-            <p className="relative top-[-14px] opacity-0 transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-r-xl text-white font-[Poppins] text-2xl">
-              Habitat
-            </p>
-          </div>
-        </Link>
-      </div>
-      <div className="overflow-hidden flex flex-col justify-center items-center h-[100vh] pt-24">
-        <div className="flex">
-          <img
-            src={"/tito/TituloElCardenalito.png"}
-            className="w-auto h-[60px]"
-          />
-        </div>
-        <div className="flex">
-          <Image className="" src={"/prueba.gif"} height={600} width={600} />
-          <img
-            src={"/tito/HolaSoyTito.png"}
-            className="relative right-[200px] top-[122px] h-[110px] w-[110px]"
-          />
-        </div>
-      </div>
+import Script from "next/script";
+import { useState } from "react";
+import './juego.css'
+import './cardijuego.css'
 
-      <div className="flex flex-col justify-center items-end gap-36 overflow-hidden">
-        <Link href={"?q=amenaza"}>
-          <div className="flex flex-row items-center group">
-            <p className="relative top-[14px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
-              Amenaza
-            </p>
-            <img src="/descript/ramaamenaza2.png" className="w-[300px] " />
-          </div>
-        </Link>
-        <Link href={"?q=juego"}>
-        <div className="flex flex-row items-center group">
-          <p className="relative top-[-32px] opacity-0 transform  transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
-            Juego
-          </p>
-          <img src="/descript/ramajuego.png" className="w-[300px] " />
-        </div>
-        </Link>
+
+const Juego = () => {
+  const [showHeart, setShowHeart] = useState(false);
+  const [showComoSoy, setShowComoSoy] = useState(false);
+  const [showAlimentacion, setShowAlimentacion] = useState(false);
+  const [showHuevito, setShowHuevito] = useState(false);
+
+  return (
+    <>
+      <div className="flex absolute top-4 left-4 z-50">
+        <img
+          src={"/tito/menu/menu.png"}
+          className="w-auto h-[80px] mt-[10px] relative "
+          onClick={() => {
+            console.log("clicked menu from layout.js");
+          }}
+        />
       </div>
-    </div>
+      <div className="flex justify-between overflow-hidden cardinalgame">
+      <div class="flex min-h-[100vh] flex-col min-w-[100vw]">
+      <div class="flex min-h-[20vh] min-w-[100vw]">
+      <div class="container  main-container">
+  <p className="draggable" draggable="true" myvalue="Pico">Pico</p>
+  <p className="draggable" draggable="true" myvalue="Ojo">Ojo</p>
+  <p className="draggable" draggable="true" myvalue="Pluma">Pluma</p>
+  <p className="draggable" draggable="true" myvalue="Ala">Ala</p>
+  <p className="draggable" draggable="true" myvalue="Cola">Cola</p>
+  <p className="draggable" draggable="true" myvalue="Pata">Pata</p>
+</div>
+
+      
+     
+      
+      </div>
+      <div class="flex min-h-[80vh] min-w-[100vw]">
+        <div className="flex flex-col items-center justify-center min-h-[80vh] w-[25vw] min-w-[25vw] max-w-[25vw]">
+        
+        <div className="game_input_container">
+        <div className="pico-flechas flecha-container">
+        <div className="pico-flecha-1 input-line"></div>
+        <div className="pico-flecha-2 input-line"></div>
+        <div className="pico-flecha-3 input-line"></div>
+        </div>
+        <div className="container secondary-container" ishouldhave="Pico"></div>
+        </div>
+        <div className="game_input_container">
+        <div className="pata-flechas flecha-container">
+        <div className="pata-flecha-1 input-line"></div>
+        <div className="pata-flecha-2 input-line"></div>
+        </div>
+        <div className="container secondary-container" ishouldhave="Pata"></div>
+        </div>
+        <div className="game_input_container">
+        <div className="pluma-flechas flecha-container">
+        <div className="pluma-flecha-1 input-line"></div>
+        <div className="pluma-flecha-2 input-line"></div>
+        <div className="pluma-flecha-3 input-line"></div>
+        </div>
+        <div className="container secondary-container" ishouldhave="Pluma"></div>
+        </div>
+
+        </div>
+        {/*                       SECCION DEL MEDIO - SOMBRERO Y VIDEO
+         */}{" "}
+        <div className="overflow-x-visible flex flex-col justify-between  items-center  h-[80vh] pt-12 w-[50vw] min-w-[50vw] max-w-[50vw]">
+          <div className="flex flex-col justify-center items-center">
+           <img
+              src={"/cardijuegoframe.png"}
+              className="h-[80vh] mt-[19vh] absolute top-[7px]
+            "
+            />
+          </div>
+          <div className="flex mb-16 gap-8">
+            <img
+              src={"/descript/Retroceder.png"}
+              className="w-auto h-[60px] mt-[10px] relative "
+            />
+            <Link href={"?q="}>
+              <img
+                src={"/descript/Inicio.png"}
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+              />
+            </Link>
+
+            <img
+              src={"/descript/Avanzar.png"}
+              className="w-auto h-[60px] mt-[10px] relative "
+            />
+          </div>
+        </div>
+        {/*                        SECCION DERECHA - ALIMENTACIO
+         */}{" "}
+        <div className="flex justify-between overflow-visible w-[25vw] min-w-[25vw] max-w-[25vw] h-[80vh]">
+          <div className="flex flex-col items-center justify-start gap-[20px] max-h-[80vh]">
+          <div className="game_input_container">
+          <div className="container secondary-container" ishouldhave="Pluma"></div>
+          </div>
+          <div className="game_input_container">
+          <div className="container secondary-container" ishouldhave="Ala"></div>
+          </div>
+          <div className="game_input_container">
+          <div className="container secondary-container" ishouldhave="Cola"></div>
+          </div>
+          </div>{" "}
+        </div>
+        </div>
+      </div>{" "}
+      </div>
+      <Script type="text/javascript" src="js/game.js" />
+      <style>
+        
+      </style>
+    </>
   );
 };
 
-export default Principal;
+
+export default Juego;

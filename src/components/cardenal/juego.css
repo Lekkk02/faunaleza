@@ -1,0 +1,91 @@
+
+  
+  .container {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .draggable {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+  }
+  
+  .draggable.dragging {
+    opacity: .5;
+  }
+
+  .container.main-container {
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    max-width: 64%;
+    background-color: #f8941c;
+    border-radius: 25px;
+    max-height: 12vh;
+    margin-left: auto;
+    margin-right: 6%;
+}
+
+.container.secondary-container {
+    background-color: #fff;
+    border-radius: 55px;
+    width: 18vw;
+    max-height: 12vh;
+    justify-content: center;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+}
+
+.container.secondary-container .draggable {
+    padding: 0px;
+    text-align: center;
+}
+
+.container.secondary-container p.draggable {
+    color: black;
+}
+
+p.draggable {
+    background-color: transparent;
+    font-size: 44px;
+    color: white;
+    border: none;
+    font-family: Poppins;
+}
+
+.main-container p.draggable {
+    color: #fff;
+    border: #000;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.input-line {
+    background-color: white;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+}
+
+.game_input_container {
+    position: relative;
+}
+
+.game_input_container .container.secondary-container {
+    border: 3px;
+    border-color: #b66f38;
+    border-style: solid;
+}
+
+.flecha-container {
+    display: flex;
+    position: absolute;
+    left: 18vw;
+    top: 8vh;
+}

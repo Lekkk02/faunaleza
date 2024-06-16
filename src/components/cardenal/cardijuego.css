@@ -1,0 +1,54 @@
+
+
+
+.input-line {
+    position: relative;
+}
+
+.pico-flecha-3 {
+    top: -9vw;
+    left: -4vw;
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    z-index: 1;
+}
+.pico-flechas {
+    left: 18vw;
+    top: 8vh;
+}
+
+.pico-flecha-1 {
+    width: 8vw;
+}
+
+.pico-flecha-2 {
+    width: 14vw;
+    transform: rotate(322deg);
+    top: -4.5vw;
+    left: -1.75vw;
+}
+
+.pico-flecha-1 {
+    top: -0.60vh;
+}
+
+
+
+
+.pata-flecha-1 {
+    width: 26vw;
+}
+
+.pata-flechas {
+    top: 8vh;
+}
+
+.pata-flecha-2 {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    top: -0.5vw;
+    left: -0.5vw;
+    z-index: 2;
+}
