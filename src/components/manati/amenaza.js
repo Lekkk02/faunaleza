@@ -63,14 +63,14 @@ const Amenaza = () => {
             src={"/tortuga/btnCardenal.png"}
             className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
-              router.push("/manati");
+              router.push("/cardenalito");
             }}
           />
           <img
             src={"/tortuga/btnMapache.png"}
             className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
-              router.push("/cardenalito");
+              router.push("/mapache");
             }}
           />
         </div>

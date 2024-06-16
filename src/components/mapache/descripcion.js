@@ -143,21 +143,24 @@ const Descripcion = () => {
                 ></iframe> */}
           </div>
           <div className="flex mb-16 gap-8">
-            <img
-              src={"/descript/Retroceder.png"}
-              className="w-auto h-[60px] mt-[10px] relative "
-            />
+            <Link href={"?q="}>
+              <img
+                src={"/descript/Retroceder.png"}
+                className="w-auto h-[60px] mt-[10px] relative "
+              />
+            </Link>
             <Link href={"?q="}>
               <img
                 src={"/descript/Inicio.png"}
                 className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
-
-            <img
-              src={"/descript/Avanzar.png"}
-              className="w-auto h-[60px] mt-[10px] relative "
-            />
+            <Link href={"?q=habitat"}>
+              <img
+                src={"/descript/Avanzar.png"}
+                className="w-auto h-[60px] mt-[10px] relative "
+              />
+            </Link>
           </div>
         </div>
         {/*                        SECCION DERECHA - ALIMENTACIO
