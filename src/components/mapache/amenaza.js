@@ -1,30 +1,61 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Amenaza = () => {
   const [showHeart, setShowHeart] = useState(false);
   const [showComoSoy, setShowComoSoy] = useState(false);
   const [showAlimentacion, setShowAlimentacion] = useState(false);
   const [showHuevito, setShowHuevito] = useState(false);
-
+  const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
   return (
     <>
-      {/*     <div className="flex absolute top-4 left-4 z-50">
+      <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={"/tito/menu/menu.png"}
-          className="w-auto h-[80px] mt-[10px] relative "
+          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
+            setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
           }}
         />
-      </div> */}
+        <div
+          className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+            showMenu ? "max-h-[250px]" : "max-h-0"
+          }`}
+        >
+          <img
+            src={"/tortuga/btnTortuga.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/tortuga");
+            }}
+          />
+          <img
+            src={"/tortuga/btnManati.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/manati");
+            }}
+          />
+          <img
+            src={"/tortuga/btnCardenal.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/cardenalito");
+            }}
+          />
+        </div>
+      </div>
 
       <div className="flex flex-col px-16 py-8 min-h-[100vh]">
         <div className="flex max-h-[60vh] h-[60vh]">
           {/*             SECCION IZQUIERDA
            */}
-          <div className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
+          <div
+            className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
               showComoSoy ? "pt-6" : "pt-20"
             } `}
           >
@@ -39,7 +70,7 @@ const Amenaza = () => {
             />
 
             <img
-              src={"/tito/amenaza/captura_graf.png"}
+              src={"/mapache/amenaza/evo_cap.png"}
               className={`relative  z-10 transition-all duration-500 ease-in-out  ${
                 showComoSoy
                   ? " transition-all  w-[18vw] min-w-[18vw] h-[36vh] min-h-[36vh] "
@@ -56,7 +87,7 @@ const Amenaza = () => {
               className={`relative z-10 transition-all h-[10vh] min-h-[10vh] duration-500 ease-in-out hover:scale-[1.1] `}
             />
             <Image
-              src={"/tito/amenaza/cardenalito.gif"}
+              src={"/mapache/amenaza/dani_trist.gif"}
               className="w-[20vw] min-w[20vw] h-[30vh] min-h-[30vh]"
               width={50}
               height={50}
@@ -64,7 +95,8 @@ const Amenaza = () => {
           </div>
           {/*           SECCION DERECHA
            */}
-          <div className={`flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
+          <div
+            className={`flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
               showHuevito ? "pt-6" : "pt-20"
             } `}
           >
@@ -79,7 +111,7 @@ const Amenaza = () => {
             />
 
             <img
-              src={"/tito/amenaza/causas.png"}
+              src={"/mapache/amenaza/causas.png"}
               className={`relative  z-10 transition-all duration-500 ease-in-out  ${
                 showHuevito
                   ? " transition-all  w-[18vw] min-w-[18vw] h-[36vh] min-h-[36vh] "
@@ -103,10 +135,10 @@ const Amenaza = () => {
             </div>
 
             <Image
-              src={"/tito/amenaza/escala.gif"}
+              src={"/mapache/amenaza/escala.gif"}
               className={`relative  z-10 transition-all duration-500 ease-in-out  ${
                 showHeart
-                  ? " transition-all  w-[95vw] min-w-[95vw] h-[20vh] min-h-[20vh] "
+                  ? " transition-all  w-[90vw] min-w-[90vw] h-[20vh] min-h-[20vh] "
                   : "opacity-0  w-0 h-0 "
               }`}
               width={50}

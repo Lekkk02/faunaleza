@@ -1,30 +1,61 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Amenaza = () => {
   const [showHeart, setShowHeart] = useState(false);
   const [showComoSoy, setShowComoSoy] = useState(false);
   const [showAlimentacion, setShowAlimentacion] = useState(false);
   const [showHuevito, setShowHuevito] = useState(false);
-
+  const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
   return (
     <>
-      {/*     <div className="flex absolute top-4 left-4 z-50">
+      <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={"/tito/menu/menu.png"}
-          className="w-auto h-[80px] mt-[10px] relative "
+          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
+            setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
           }}
         />
-      </div> */}
+        <div
+          className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
+            showMenu ? "max-h-[250px]" : "max-h-0"
+          }`}
+        >
+          <img
+            src={"/tortuga/btnTortuga.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/tortuga");
+            }}
+          />
+          <img
+            src={"/tortuga/btnManati.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/manati");
+            }}
+          />
+          <img
+            src={"/tortuga/btnMapache.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/mapache");
+            }}
+          />
+        </div>
+      </div>
 
       <div className="flex flex-col px-16 py-8 min-h-[100vh]">
         <div className="flex max-h-[60vh] h-[60vh]">
           {/*             SECCION IZQUIERDA
            */}
-          <div className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
+          <div
+            className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
               showComoSoy ? "pt-6" : "pt-20"
             } `}
           >
@@ -107,7 +138,7 @@ const Amenaza = () => {
               src={"/tito/amenaza/escala.gif"}
               className={`relative  z-10 transition-all duration-500 ease-in-out  ${
                 showHeart
-                  ? " transition-all  w-[95vw] min-w-[95vw] h-[20vh] min-h-[20vh] "
+                  ? " transition-all  w-[90vw] min-w-[90vw] h-[20vh] min-h-[20vh] "
                   : "opacity-0  w-0 h-0 "
               }`}
               width={50}
@@ -116,20 +147,22 @@ const Amenaza = () => {
           </div>
 
           <div className="flex  gap-8">
-            <img
-              src={"/descript/Retroceder.png"}
-              className="w-auto h-[60px]  relative "
-            />
+            <Link href={"?q=habitat"}>
+              <img
+                src={"/descript/Retroceder.png"}
+                className="w-auto h-[60px] relative  hover:scale-[1.2] transition-all duration-500 z-50"
+              />
+            </Link>
             <Link href={"?q="}>
               <img
                 src={"/descript/Inicio.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500 z-50"
               />
             </Link>
 
             <img
               src={"/descript/Avanzar.png"}
-              className="w-auto h-[60px]  relative "
+              className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500 z-50"
             />
           </div>
         </div>

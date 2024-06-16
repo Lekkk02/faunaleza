@@ -26,3 +26,10 @@ body {
     text-wrap: balance;
   }
 }
+/* En globals.css */
+@layer utilities {
+  .transition-max-height {
+    transition: max-height 0.5s ease-in-out;
+  }
+}
+
