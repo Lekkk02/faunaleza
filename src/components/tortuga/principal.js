@@ -100,12 +100,14 @@ const Principal = () => {
               <img src="/tortuga/btnAmenaza.png" className="w-[110px] z-[10]" />
             </div>
           </Link>
+          <Link href={"?q=juego"}>
           <div className="flex flex-row items-center group relative right-[130px]">
             <p className=" z-[5] relative  opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#94ac3a] rounded-l-xl text-white font-[Poppins] text-2xl">
               Juego
             </p>
             <img src="/tortuga/btnJuego.png" className="w-[110px] z-[10]" />
           </div>
+          </Link>
         </div>
       </div>
     </>

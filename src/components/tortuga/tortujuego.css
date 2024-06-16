@@ -1,0 +1,130 @@
+.tortujuego {
+    img.rotateme {
+        transform: rotate(21deg);
+    }
+
+    .main-container {
+        background-color: #98ac3c        ;
+    }
+
+    .game_input_container .container.secondary-container {
+        border-color: black;
+    }
+
+    .flecha-container {
+        display: flex;
+        position: absolute;
+        left: 18vw;
+        top: 7vh;
+    }
+
+    .caparazon-flecha-1.input-line {
+        width: 22vw;
+        z-index: 2;
+    }
+    
+    .caparazon-flecha-2.input-line {
+        left: 22vw;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        top: -0.5vw;
+        z-index: 2;
+        left: 21.75vw;
+    }
+
+    .container.secondary-container p.draggable {
+        color: #088cf4;
+    }
+
+    .cola-flecha-1.input-line {
+        width: 18vw;
+        top: 0vw;
+    }
+
+    .cola-flecha-3.input-line {
+        left: 19vw;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        top: -3vw;
+        z-index: 2;
+    }
+    
+    .cola-flecha-2.input-line {
+        width: 3vw;
+        transform: rotate(303deg);
+        left: 17.2vw;
+        z-index: 2;
+        top: -1.3vw;
+    }
+
+    .flecha-container-right {
+        top: 3vw;
+        position: absolute;
+    }
+    
+    .ojo-flecha-2.input-line {
+        left: -20.5vw;
+        border-radius: 50%;
+        width: 1vw;
+        height: 1vw;
+        top: -0.5vw;
+    }
+    
+    .ojo-flecha-1.input-line {
+        width: 20.5vw;
+        left: -20.5vw;
+    }
+    
+    .boca-flecha-1.input-line {
+        width: 12vw;
+        transform: rotate(26deg);
+        left: -11.2vw;
+        top: -3vw;
+    }
+    
+    .boca-flecha-2.input-line {
+        width: 6vw;
+        left: -16.5vw;
+        top: -5.6vw;
+    }
+    
+    .boca-flecha-3.input-line {
+        left: -16.5vw;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        top: -5.9vw;
+    }
+
+    .aleta-flecha-1.input-line {
+        width: 23vw;
+        left: -23vw;
+    }
+    
+    .aleta-flecha-2.input-line {
+        top: -0.5vw;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        left: -23vw;
+    }
+
+    .game_input_container.rejected .input-line {
+        background-color: red;
+        }
+        
+        .game_input_container.rejected .container.secondary-container { 
+            border-color: red;
+        }
+        
+        .game_input_container.approved .input-line {
+            background-color: darkgreen;
+            }
+            
+            .game_input_container.approved .container.secondary-container { 
+                border-color: darkgreen;
+            }
+        
+}

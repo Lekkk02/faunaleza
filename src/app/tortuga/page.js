@@ -4,6 +4,7 @@ import Principal from "@/components/tortuga/principal";
 import Descripcion from "@/components/tortuga/descripcion";
 import Habitat from "@/components/tortuga/habitat";
 import Amenaza from "@/components/tortuga/amenaza";
+import Juego from "@/components/tortuga/juego";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -56,6 +57,17 @@ const Content = () => {
                 <Amenaza />
               </motion.div>
             );
+            case "juego":
+              return (
+                <motion.div
+                  key="juego"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Juego />
+                </motion.div>
+              );
           case null:
           default:
             return (
