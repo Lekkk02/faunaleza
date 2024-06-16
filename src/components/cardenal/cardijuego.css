@@ -1,6 +1,6 @@
 
 
-
+.cardijuego {
 .input-line {
     position: relative;
 }
@@ -148,4 +148,9 @@
     transform: rotate(345deg);
     left: 2.29vw;
     top: .4vw;
+}
+}
+
+html {
+    overflow-y: hidden;
 }

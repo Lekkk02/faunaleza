@@ -51,13 +51,14 @@ const Principal = () => {
             <img src="/mapache/BotonAmenaza.png" className="w-[145px] " />
           </div>
         </Link>
-
+        <Link href={"?q=juego"}>
         <div className="flex flex-row items-center group relative right-[180px]">
           <p className="relative right-[-15px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-l-xl text-white font-[Poppins] text-2xl">
             Juego
           </p>
           <img src="/mapache/BotonJuego.png" className="w-[145px] " />
         </div>
+        </Link>
       </div>
     </div>
   );

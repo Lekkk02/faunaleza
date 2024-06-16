@@ -13,11 +13,11 @@ const Juego = () => {
 
   return (
     <>
-      <div className="flex absolute top-4 left-4 z-50 titlecontainer">
+      <div className="bird_section flex absolute top-4 left-4 z-50 titlecontainer">
         <Image src={"/tito/titotile.png"} className="juego_titulo" />
         <Image src={"/tito/titosubtitle.png"} className="juego_subtitulo" />
       </div>
-      <div className="flex justify-between overflow-hidden cardinalgame">
+      <div className="cardijuego flex justify-between overflow-hidden cardinalgame">
         <div class="flex min-h-[100vh] flex-col min-w-[100vw]">
           <div class="flex min-h-[20vh] min-w-[100vw]">
             <div class="container  main-container">
@@ -84,11 +84,11 @@ const Juego = () => {
             </div>
             {/*                       SECCION DEL MEDIO - SOMBRERO Y VIDEO
              */}{" "}
-            <div className="overflow-x-visible flex flex-col justify-between  items-center  h-[80vh] pt-12 w-[50vw] min-w-[50vw] max-w-[50vw]">
-              <div className="flex flex-col justify-center items-center">
+            <div className="overflow-x-visible overflow-y-hidden flex flex-col justify-between  items-center  h-[80vh] pt-12 w-[50vw] min-w-[50vw] max-w-[50vw]">
+              <div className="flex flex-col overflow-y-hidden justify-center items-center">
                 <img
-                  src={"/cardijuegoframe.png"}
-                  className="h-[80vh] mt-[19vh] absolute top-[7px]
+                  src={"/cardijuego.gif"}
+                  className="w-[29vw] mt-[9vh] absolute top-[7px]
             "
                 />
               </div>

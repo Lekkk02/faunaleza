@@ -1,0 +1,88 @@
+.mapajuego {
+ .input-line {
+    position: relative;
+}
+.oreja-flecha-1.input-line {
+    width: 11vw;
+}
+
+.oreja-flecha-2.input-line {
+    width: 16vw;
+    transform: rotate(332deg);
+    top: -3.8vw;
+    left: -1.2vw;
+}
+
+.oreja-flecha-3.input-line {
+    z-index: 2;
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    top: -16vh;
+    left: -3vw;
+}
+
+.cola-flecha-2.input-line {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    z-index: 2;
+    top: -0.5vw;
+    left: -0.75vw;
+}
+
+.cola-flecha-1.input-line {
+    width: 19vw;
+    z-index: 2;
+}
+
+.pata-flecha-1.input-line {
+    width: 17vw;
+}
+
+.pata-flecha-2.input-line {
+    width: 12vw;
+    transform: rotate(45deg);
+    top: 4.5vw;
+    left: -2vw;
+    top: 4.1vw;
+}
+
+.pata-flecha-3.input-line {
+    height: 1vw;
+    width: 1vw;
+    border-radius: 50%;
+    z-index: 2;
+    top: 8vw;
+    left: -4.5vw;
+}
+
+.cabeza-flecha-1.input-line {width: 24vw;left: -24vw;}
+
+.flecha-container-right {
+    top: 9vh;
+    position: absolute;
+}
+
+.cabeza-flecha-2.input-line {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    left: -24vw;
+    top: -0.5vw;
+}
+
+.ojo-flecha-1.input-line {
+    width: 20vw;
+    left: -20vw;
+}
+
+.ojo-flecha-2.input-line {
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    top: -0.5vw;
+    left: -20vw;
+}
+
+}

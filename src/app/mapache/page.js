@@ -4,6 +4,7 @@ import Principal from "@/components/mapache/principal";
 import Descripcion from "@/components/mapache/descripcion";
 import Habitat from "@/components/mapache/habitat";
 import Amenaza from "@/components/mapache/amenaza";
+import Juego from "@/components/mapache/juego";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -45,6 +46,17 @@ const Content = () => {
                 <Habitat />
               </motion.div>
             );
+            case "juego":
+              return (
+                <motion.div
+                  key="juego"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Juego />
+                </motion.div>
+              );
           case "amenaza":
             return (
               <motion.div
