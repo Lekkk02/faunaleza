@@ -4,7 +4,7 @@ import Principal from "@/components/manati/principal";
 import Descripcion from "@/components/manati/descripcion";
 import Habitat from "@/components/manati/habitat";
 import Amenaza from "@/components/manati/amenaza";
-import Juego from "@/components/maniti/juego";
+import Juego from "@/components/manati/juego";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 

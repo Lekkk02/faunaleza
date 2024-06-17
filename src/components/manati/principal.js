@@ -96,13 +96,14 @@ const Principal = () => {
               <img src="/manati/btnAmenaza.png" className="w-[120px] z-10" />
             </div>
           </Link>
-
+          <Link href={"?q=juego"}>
           <div className="flex flex-row items-center group relative right-[180px]">
             <p className="relative right-[-2px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#ec6255] rounded-l-xl text-white font-[Poppins] text-2xl">
               Juego
             </p>
             <img src="/manati/btnJuego.png" className="w-[120px] z-10 " />
           </div>
+          </Link>
         </div>
       </div>
     </>
