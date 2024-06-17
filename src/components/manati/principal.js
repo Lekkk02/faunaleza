@@ -9,7 +9,7 @@ const Principal = () => {
     <>
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
-          src={"/manati/menu.png"}
+          src={`${showMenu ? "/manati/cerrarMenu.png" : "/manati/menu.png"}`}
           className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
@@ -18,9 +18,16 @@ const Principal = () => {
         />
         <div
           className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-            showMenu ? "max-h-[250px]" : "max-h-0"
+            showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
+          <img
+            src={"/btnMenuHome.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/");
+            }}
+          />
           <img
             src={"/tortuga/btnTortuga.png"}
             className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
@@ -97,12 +104,12 @@ const Principal = () => {
             </div>
           </Link>
           <Link href={"?q=juego"}>
-          <div className="flex flex-row items-center group relative right-[180px]">
-            <p className="relative right-[-2px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#ec6255] rounded-l-xl text-white font-[Poppins] text-2xl">
-              Juego
-            </p>
-            <img src="/manati/btnJuego.png" className="w-[120px] z-10 " />
-          </div>
+            <div className="flex flex-row items-center group relative right-[180px]">
+              <p className="relative right-[-2px] opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#ec6255] rounded-l-xl text-white font-[Poppins] text-2xl">
+                Juego
+              </p>
+              <img src="/manati/btnJuego.png" className="w-[120px] z-10 " />
+            </div>
           </Link>
         </div>
       </div>

@@ -10,7 +10,7 @@ const Principal = () => {
       {" "}
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
-          src={"/tortuga/menu.png"}
+          src={`${showMenu ? "/tortuga/cerrarMenu.png" : "/tortuga/menu.png"}`}
           className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
@@ -19,9 +19,16 @@ const Principal = () => {
         />
         <div
           className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-            showMenu ? "max-h-[250px]" : "max-h-0"
+            showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
+          <img
+            src={"/btnMenuHome.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/");
+            }}
+          />
           <img
             src={"/tortuga/btnCardenal.png"}
             className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
@@ -101,12 +108,12 @@ const Principal = () => {
             </div>
           </Link>
           <Link href={"?q=juego"}>
-          <div className="flex flex-row items-center group relative right-[130px]">
-            <p className=" z-[5] relative  opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#94ac3a] rounded-l-xl text-white font-[Poppins] text-2xl">
-              Juego
-            </p>
-            <img src="/tortuga/btnJuego.png" className="w-[110px] z-[10]" />
-          </div>
+            <div className="flex flex-row items-center group relative right-[130px]">
+              <p className=" z-[5] relative  opacity-0 transform translate-x-[16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#94ac3a] rounded-l-xl text-white font-[Poppins] text-2xl">
+                Juego
+              </p>
+              <img src="/tortuga/btnJuego.png" className="w-[110px] z-[10]" />
+            </div>
           </Link>
         </div>
       </div>

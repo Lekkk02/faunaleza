@@ -13,7 +13,7 @@ const Habitat = () => {
     <>
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
-          src={"/tortuga/menu.png"}
+          src={`${showMenu ? "/tortuga/cerrarMenu.png" : "/tortuga/menu.png"}`}
           className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
@@ -22,9 +22,17 @@ const Habitat = () => {
         />
         <div
           className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-            showMenu ? "max-h-[250px]" : "max-h-0"
+            showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
+          {" "}
+          <img
+            src={"/btnMenuHome.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/");
+            }}
+          />
           <img
             src={"/tortuga/btnCardenal.png"}
             className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
@@ -175,6 +183,15 @@ const Habitat = () => {
             </div>
 
             <div className="flex  flex-1 relative  ">
+              <img
+                src={"/tortuga/habitat/txtAbajo.png"}
+                className={`relative right z-10 transition-all duration-500 ease-in-out hover:scale-[1.2] ${
+                  showAlimentacion
+                    ? "opacity-100 hover:cursor-pointer w-[19vw] min-w-[19vw] h-[40vh] min-h-[40vh] z-10"
+                    : "opacity-0 w-0 max-w-0 min-w-0 h-0 max-h-0 min-h-0"
+                }`}
+                onClick={() => setShowAlimentacion(true)}
+              />
               {/*  <Image
                 src={"/mapache/mapachePrincipal.gif"}
                 className={`  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${

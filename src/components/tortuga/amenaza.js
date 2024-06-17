@@ -13,7 +13,7 @@ const Amenaza = () => {
     <>
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
-          src={"/tortuga/menu.png"}
+          src={`${showMenu ? "/tortuga/cerrarMenu.png" : "/tortuga/menu.png"}`}
           className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
@@ -22,9 +22,16 @@ const Amenaza = () => {
         />
         <div
           className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-            showMenu ? "max-h-[250px]" : "max-h-0"
+            showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
+          <img
+            src={"/btnMenuHome.png"}
+            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            onClick={() => {
+              router.push("/");
+            }}
+          />
           <img
             src={"/tortuga/btnCardenal.png"}
             className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
