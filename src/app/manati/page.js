@@ -4,6 +4,7 @@ import Principal from "@/components/manati/principal";
 import Descripcion from "@/components/manati/descripcion";
 import Habitat from "@/components/manati/habitat";
 import Amenaza from "@/components/manati/amenaza";
+import Juego from "@/components/maniti/juego";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -56,6 +57,17 @@ const Content = () => {
                 <Amenaza />
               </motion.div>
             );
+            case "juego":
+              return (
+                <motion.div
+                  key="juego"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <Juego />
+                </motion.div>
+              );
           case null:
           default:
             return (
