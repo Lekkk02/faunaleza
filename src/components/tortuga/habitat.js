@@ -101,11 +101,23 @@ const Habitat = () => {
             />
           </div>
           <div className="flex flex-col justify-center items-center">
-            <div className="flex flex-[2_2_0%]">
+            <div className="flex flex-[2_2_0%] relative top-[50px]">
               <img
                 src={"/tortuga/habitat/mapa.png"}
-                className={`w-[32vw] h-[50vh] min-h-[50vh] relative top-[30px] 
+                className={`${
+                  !showComoSoy && !showAlimentacion
+                    ? "w-[32vw] h-[250px] min-h-[50vh] relative"
+                    : "w-0 h-0"
+                }
                `}
+              />
+              <img
+                src={"/tortuga/habitat/mapa2.png"}
+                className={`  transition-all duration-500 ease-in-out ${
+                  showComoSoy || showAlimentacion
+                    ? "opacity-100 w-[32vw] h-[250px] min-h-[50vh] relative "
+                    : "opacity-0 w-0 h-0"
+                }`}
               />
             </div>
 

@@ -124,8 +124,8 @@ const Habitat = () => {
               } `}
             />
             <img
-              src={"/tito/hab/mapa_all.png"}
-              className={` relative ${
+              src={"/tito/hab/mapa_point.png"}
+              className={` relative transition-all duration-500 ease-in-out ${
                 showComoSoy && showAlimentacion
                   ? "w-[32vw] h-[250px] min-h-[50vh] opacity-100"
                   : "opacity-0 w-0 h-0"

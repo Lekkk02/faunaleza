@@ -109,7 +109,7 @@ const Habitat = () => {
               />
               <img
                 src={"/manati/habitat/mapa2.png"}
-                className={` relative ${
+                className={` relative transition-all duration-500 ease-in-out ${
                   showAlimentacion
                     ? "w-[32vw] h-[250px] min-h-[50vh] opacity-100"
                     : "opacity-0 w-0 h-0"

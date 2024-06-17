@@ -95,8 +95,20 @@ const Habitat = () => {
             <div className="flex flex-[2_2_0%]">
               <img
                 src={"/mapache/habitat/mapa.png"}
-                className={`w-[32vw] h-[250px] min-h-[50vh] relative 
+                className={`${
+                  !showComoSoy && !showAlimentacion
+                    ? "w-[32vw] h-[250px] min-h-[50vh] relative"
+                    : "w-0 h-0"
+                }
                `}
+              />
+              <img
+                src="/mapache/habitat/mapa2.png"
+                className={`  transition-all duration-500 ease-in-out ${
+                  showComoSoy || showAlimentacion
+                    ? "opacity-100 w-[32vw] h-[250px] min-h-[50vh] relative "
+                    : "opacity-0 w-0 h-0"
+                }`}
               />
             </div>
 
