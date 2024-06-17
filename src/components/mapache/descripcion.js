@@ -114,7 +114,7 @@ const Descripcion = () => {
         <div className="overflow-x-visible flex flex-col justify-between  items-center  h-[100vh] pt-12 w-[50vw] min-w-[50vw] max-w-[50vw]">
           <div className="flex">
             <img
-              src={"/mapache/descripcion/titulo.png"}
+              src={"/mapache/descripcion/el_titulo.png"}
               className="w-auto h-[80px] mt-[10px] relative "
             />
           </div>
