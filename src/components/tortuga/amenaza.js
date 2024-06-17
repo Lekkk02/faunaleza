@@ -99,7 +99,7 @@ const Amenaza = () => {
             } `}
           >
             <img
-              src={"/tito/amenaza/btn_causa.png"}
+              src={"/tortuga/habitat/btnInterro.png"}
               className={`relative  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
                 showHuevito
                   ? " transition-all w-0 h-0 "

@@ -151,7 +151,7 @@ const Habitat = () => {
           <div className="flex flex-col items-center justify-center max-h-[100vh] relative right-[80px]">
             <div className="flex flex-1 flex-col items-center justify-center space-y-4 min-h-[50vh]">
               <img
-                src={"/tito/hab/btn_pob.png"}
+                src={"/tortuga/habitat/btnInterro.png"}
                 className={`relative w-[8vw] min-w-[8vw] h-[120px] right z-10 transition-all duration-500 ease-in-out hover:scale-[1.2] ${
                   showAlimentacion
                     ? "opacity-0 w-0 max-w-0 min-w-0 h-0 max-h-0 min-h-0"
