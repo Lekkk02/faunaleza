@@ -79,21 +79,24 @@ const Juego = () => {
                 />
               </div>
               <div className="flex mb-16 gap-8">
-                <img
-                src={"/manati/btnRetroceder.png"}
-                  className="w-auto h-[60px] mt-[10px] relative "
-                />
-                <Link href={"?q="}>
+                <Link href={"?q=amenaza"}>
                   <img
-               src={"/manati/btnHome.png"}
+                    src={"/manati/btnRetroceder.png"}
                     className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
                   />
                 </Link>
-
-                <img
-                  src={"/manati/btnAvanzar.png"}
-                  className="w-auto h-[60px] mt-[10px] relative "
-                />
+                <Link href={"?q="}>
+                  <img
+                    src={"/manati/btnHome.png"}
+                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                  />
+                </Link>
+                <Link href={"?q="}>
+                  <img
+                    src={"/manati/btnAvanzar.png"}
+                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                  />
+                </Link>
               </div>
             </div>
             {/*                        SECCION DERECHA - ALIMENTACIO

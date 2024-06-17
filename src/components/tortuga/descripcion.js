@@ -111,21 +111,21 @@ const Descripcion = () => {
           </div>
           <div className="flex flex-col justify-center items-center">
             <Image
-              className="relative "
+              className="relative w-[16vw] min-w-[16vw] h-[18vh] min-h-[18vh] "
               src={"/tortuga/descripcion/tortuga_cara.gif"}
-              height={300}
-              width={300}
+              height={250}
+              width={250}
             />
             <img
               src={"/tortuga/descripcion/quiensoy.png"}
-              className="w-[25vw] min-w-[25vw] h-[8vh] min-h-[8vh] relative top-[-50px] "
+              className="w-[22vw] min-w-[22vw] h-[7vh] min-h-[7vh] relative top-[-30px] "
             />
-            <div className="w-[35vw] top-[-55px] min-w-[35vw] h-[35vh] min-h-[35vh] border-[5px] border-orange-500 rounded-3xl relative overflow-hidden">
+            <div className="w-[35vw] top-[-35px] min-w-[35vw] h-[35vh] min-h-[35vh] border-[5px] border-[#94ac3a] rounded-3xl relative overflow-hidden">
               <video
                 controls
                 className="absolute top-0 left-0 w-full h-full object-cover"
               >
-                <source src="/tito/descr/her.mp4" />
+                <source src="/tortuga/video_tortuga.mp4" />
               </video>
             </div>
 

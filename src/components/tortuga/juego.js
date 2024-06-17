@@ -11,14 +11,14 @@ const Juego = () => {
   return (
     <>
       <div className="tortujuego flex absolute top-4 left-4 z-50 titlecontainer">
-        <Image src={"/tortuga/juego/Estático-55.png"} className="juego_titulo" />
-        <Image src={"/tortuga/juego/Estático-56.png"} className="subtitle" />
+        <img src={"/tortuga/juego/Estático-55.png"} className="juego_titulo" />
+        <img src={"/tortuga/juego/Estático-56.png"} className="subtitle" />
       </div>
       <div className=" tortujuego flex justify-between overflow-hidden">
         <div class="flex min-h-[100vh] flex-col min-w-[100vw]">
           <div class="flex min-h-[20vh] min-w-[100vw]">
             <div class="container  main-container">
-            <p className="draggable" draggable="true" myvalue="Boca">
+              <p className="draggable" draggable="true" myvalue="Boca">
                 Boca
               </p>
               <p className="draggable" draggable="true" myvalue="Ojo">
@@ -48,16 +48,16 @@ const Juego = () => {
                 ></div>
               </div>
               <div className="game_input_container">
-                  <div className="cola-flechas flecha-container">
-                    <div className="cola-flecha-1 input-line"></div>
-                    <div className="cola-flecha-2 input-line"></div>
-                    <div className="cola-flecha-3 input-line"></div>
-                  </div>
-                  <div
-                    className="container secondary-container"
-                    ishouldhave="Cola"
-                  ></div>
+                <div className="cola-flechas flecha-container">
+                  <div className="cola-flecha-1 input-line"></div>
+                  <div className="cola-flecha-2 input-line"></div>
+                  <div className="cola-flecha-3 input-line"></div>
                 </div>
+                <div
+                  className="container secondary-container"
+                  ishouldhave="Cola"
+                ></div>
+              </div>
             </div>
             {/*                       SECCION DEL MEDIO - SOMBRERO Y VIDEO
              */}{" "}
@@ -70,28 +70,31 @@ const Juego = () => {
                 />
               </div>
               <div className="flex mb-16 gap-8">
-                <img
-                  src={"/tortuga/btnRetroceder.png"}
-                  className="w-auto h-[60px] mt-[10px] relative "
-                />
+                <Link href={"?q=amenaza"}>
+                  <img
+                    src={"/tortuga/btnRetroceder.png"}
+                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                  />
+                </Link>
                 <Link href={"?q="}>
                   <img
                     src={"/tortuga/btnHome.png"}
                     className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
                   />
                 </Link>
-
-                <img
-                  src={"/tortuga/btnAvanzar.png"}
-                  className="w-auto h-[60px] mt-[10px] relative "
-                />
+                <Link href={"?q="}>
+                  <img
+                    src={"/tortuga/btnAvanzar.png"}
+                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                  />
+                </Link>
               </div>
             </div>
             {/*                        SECCION DERECHA - ALIMENTACIO
              */}{" "}
             <div className="flex justify-between overflow-visible w-[25vw] min-w-[25vw] max-w-[25vw] h-[80vh]">
               <div className="flex flex-col items-center justify-start max-h-[80vh]">
-              <div className="game_input_container">
+                <div className="game_input_container">
                   <div className="ojo-flechas flecha-container-right">
                     <div className="ojo-flecha-1 input-line"></div>
                     <div className="ojo-flecha-2 input-line"></div>
@@ -122,10 +125,7 @@ const Juego = () => {
                     ishouldhave="Aleta"
                   ></div>
                 </div>
-                <Image
-              src={"/tortuga/ok.png"}
-              className="terminar "
-            />
+                <img src={"/tortuga/ok.png"} className="terminar " />
               </div>{" "}
             </div>
           </div>

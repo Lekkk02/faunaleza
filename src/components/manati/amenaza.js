@@ -196,7 +196,7 @@ const Amenaza = () => {
             <Link href={"?q=habitat"}>
               <img
                 src={"/manati/btnRetroceder.png"}
-                className="w-auto h-[60px] relative "
+                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q="}>
@@ -208,7 +208,7 @@ const Amenaza = () => {
             <Link href={"?q=juego"}>
               <img
                 src={"/manati/btnAvanzar.png"}
-                className="w-auto h-[60px] relative "
+                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
           </div>

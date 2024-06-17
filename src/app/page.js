@@ -18,7 +18,7 @@ const Page = () => {
         </Link>
         <Link href={"/tortuga"}>
           <div className="flex items-center group">
-            <img src="/btnTortuga.png" className="w-[30vw] max-w-[300px]" />
+            <img src="/btnTortuga_1.png" className="w-[30vw] max-w-[300px]" />
           </div>
         </Link>
       </div>

@@ -157,10 +157,12 @@ const Amenaza = () => {
                 className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
-            <img
-              src={"/tortuga/btnAvanzar.png"}
-              className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
-            />
+            <Link href={"?q=juego"}>
+              <img
+                src={"/tortuga/btnAvanzar.png"}
+                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+              />
+            </Link>
           </div>
         </div>
       </div>

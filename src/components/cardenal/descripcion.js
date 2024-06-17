@@ -135,7 +135,7 @@ const Descripcion = () => {
                 controls
                 className="absolute top-0 left-0 w-full h-full object-cover"
               >
-                <source src="/tito/descr/her.mp4" />
+                <source src="/tito/video_cardenal.mp4" />
               </video>
             </div>
 

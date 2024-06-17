@@ -141,7 +141,7 @@ const Descripcion = () => {
             <Link href={"?q="}>
               <img
                 src={"/manati/btnRetroceder.png"}
-                className="w-auto h-[60px] mt-[10px] relative "
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q="}>
@@ -153,7 +153,7 @@ const Descripcion = () => {
             <Link href={"?q=habitat"}>
               <img
                 src={"/manati/btnAvanzar.png"}
-                className="w-auto h-[60px] mt-[10px] relative "
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
           </div>

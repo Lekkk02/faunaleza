@@ -14,8 +14,8 @@ const Juego = () => {
   return (
     <>
       <div className="bird_section flex absolute top-4 left-4 z-50 titlecontainer">
-        <Image src={"/tito/titotile.png"} className="juego_titulo" />
-        <Image src={"/tito/titosubtitle.png"} className="juego_subtitulo" />
+        <img src={"/tito/titotile.png"} className="juego_titulo" />
+        <img src={"/tito/titosubtitle.png"} className="juego_subtitulo" />
       </div>
       <div className="cardijuego flex justify-between overflow-hidden cardinalgame">
         <div class="flex min-h-[100vh] flex-col min-w-[100vw]">
@@ -43,7 +43,7 @@ const Juego = () => {
           </div>
           <div class="flex min-h-[80vh] min-w-[100vw]">
             <div className="flex flex-col items-center justify-center min-h-[80vh] w-[25vw] min-w-[25vw] max-w-[25vw]">
-              <Image src={"/pluma.png"} className="pluma" />
+              <img src={"/pluma.png"} className="pluma" />
               <div className="game_input_container">
                 <div className="pico-flechas flecha-container">
                   <div className="pico-flecha-1 input-line"></div>
@@ -70,7 +70,7 @@ const Juego = () => {
                   <div className="pluma-flecha-1 input-line"></div>
                   <div className="pluma-flecha-2 input-line"></div>
                   <div className="pluma-flecha-3 input-line"></div>
-                  <Image
+                  <img
                     src={"/pluma.png"}
                     className="pluma"
                     onClick={() => setShowComoSoy(true)}
@@ -93,21 +93,24 @@ const Juego = () => {
                 />
               </div>
               <div className="flex mb-16 gap-8">
-                <img
-                  src={"/descript/Retroceder.png"}
-                  className="w-auto h-[60px] mt-[10px] relative "
-                />
+                <Link href={"?q=amenaza"}>
+                  <img
+                    src={"/descript/Retroceder.png"}
+                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                  />
+                </Link>
                 <Link href={"?q="}>
                   <img
                     src={"/descript/Inicio.png"}
                     className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
                   />
                 </Link>
-
-                <img
-                  src={"/descript/Avanzar.png"}
-                  className="w-auto h-[60px] mt-[10px] relative "
-                />
+                <Link href={"?q="}>
+                  <img
+                    src={"/descript/Avanzar.png"}
+                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                  />
+                </Link>
               </div>
             </div>
             {/*                        SECCION DERECHA - ALIMENTACIO
@@ -145,10 +148,7 @@ const Juego = () => {
                     ishouldhave="Cola"
                   ></div>
                 </div>
-                <Image
-              src={"/terminar.png"}
-              className="terminar "
-            />
+                <img src={"/terminar.png"} className="terminar " />
               </div>{" "}
             </div>
           </div>

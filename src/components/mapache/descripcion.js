@@ -93,7 +93,7 @@ const Descripcion = () => {
               width={10}
             />
             <img
-              src="/tito/descr/txt_soy_cardenalita.png"
+              src="/mapache/descripcion/madre_mapache.png"
               className={` transition-all duration-500 ease-in relative top-[130px]  ${
                 showHeart
                   ? "opacity-100 w-[12vw] min-w-[12vw] h-[26vh] min-h-[26vh]"
@@ -127,7 +127,7 @@ const Descripcion = () => {
                 controls
                 className="absolute top-0 left-0 w-full h-full object-cover"
               >
-                <source src="/tito/descr/her.mp4" />
+                <source src="/mapache/video_mapache.mp4" />
               </video>
             </div>
 
@@ -146,7 +146,7 @@ const Descripcion = () => {
             <Link href={"?q="}>
               <img
                 src={"/descript/Retroceder.png"}
-                className="w-auto h-[60px] mt-[10px] relative "
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q="}>
@@ -158,7 +158,7 @@ const Descripcion = () => {
             <Link href={"?q=habitat"}>
               <img
                 src={"/descript/Avanzar.png"}
-                className="w-auto h-[60px] mt-[10px] relative "
+                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
           </div>
