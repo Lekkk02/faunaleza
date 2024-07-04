@@ -55,10 +55,19 @@ const Habitat = () => {
           />
         </div>
       </div>
-      <div className="relative  ">
+      <div className="relative top-0 left-0 ">
         <img
           src={"/tito/hab/arbol.png"}
           className="absolute w-auto h-[100vh]"
+          onClick={() => {
+            console.log("clicked menu from layout.js");
+          }}
+        />
+      </div>
+      <div className="absolute h-full w-full">
+        <img
+          src={"/tito/hab/cactus.png"}
+          className="absolute right-1 w-auto h-[100vh]"
           onClick={() => {
             console.log("clicked menu from layout.js");
           }}

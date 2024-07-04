@@ -63,13 +63,13 @@ const Amenaza = () => {
           {/*             SECCION IZQUIERDA
            */}
           <div
-            className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
-              showComoSoy ? "pt-6" : "pt-20"
+            className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[60vh] min-h-[60vh] flex  justify-center ${
+              showComoSoy ? "pt-6 items-center" : "pt-20"
             } `}
           >
             <img
               src={"/tito/amenaza/btn_cap.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out hover:scale-[1.1] ${
                 showComoSoy
                   ? " transition-all w-0 h-0"
                   : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[14vh] min-h-[14vh] "
@@ -79,7 +79,7 @@ const Amenaza = () => {
 
             <img
               src={"/mapache/amenaza/evo_cap.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out  ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out  ${
                 showComoSoy
                   ? " transition-all  w-[20vw] min-w-[20vw] h-[42vh] min-h-[42vh] "
                   : "opacity-100  w-0 h-0 "
@@ -105,12 +105,12 @@ const Amenaza = () => {
            */}
           <div
             className={`flex-1 transition-all ease-in-out duration-500 w-[25vw] min-w[25vw] max-h-[60vh] h-[60vh] min-h-[60vh] flex  justify-center ${
-              showHuevito ? "pt-6" : "pt-20"
+              showHuevito ? "pt-6 items-center" : "pt-20"
             } `}
           >
             <img
               src={"/tito/amenaza/btn_causa.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out hover:scale-[1.1] ${
                 showHuevito
                   ? " transition-all w-0 h-0 "
                   : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[14vh] min-h-[14vh]  "
@@ -120,7 +120,7 @@ const Amenaza = () => {
 
             <img
               src={"/mapache/amenaza/causas.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out  ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out  ${
                 showHuevito
                   ? " transition-all  w-[20vw] min-w-[20vw] h-[40vh] min-h-[40vh] "
                   : "opacity-100  w-0 h-0 mt-0"
@@ -144,7 +144,7 @@ const Amenaza = () => {
             <div className="min-h-[20vh] flex items-start">
               <Image
                 src={"/mapache/amenaza/escala.gif"}
-                className={`relative bottom-[60px]  z-10 transition-all duration-500 ease-in-out  ${
+                className={`relative bottom-[40px]  z-10 transition-all duration-500 ease-in-out  ${
                   showHeart
                     ? " transition-all  w-[90vw] min-w-[90vw] h-[20vh] min-h-[20vh] "
                     : "opacity-0  w-0 h-0 "

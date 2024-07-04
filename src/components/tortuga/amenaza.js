@@ -61,12 +61,14 @@ const Amenaza = () => {
            */}
           <div
             className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex   ${
-              showComoSoy ? "pt-6 justify-end" : "pt-20 justify-center"
+              showComoSoy
+                ? "pt-6 justify-end items-start"
+                : "pt-20 justify-center"
             } `}
           >
             <img
               src={"/tortuga/amenaza/btnAmenaza.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out hover:scale-[1.1] ${
                 showComoSoy
                   ? " transition-all w-0 h-0"
                   : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[12vh] min-h-[12vh] "
@@ -102,12 +104,14 @@ const Amenaza = () => {
            */}
           <div
             className={`flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex   ${
-              showHuevito ? "pt-6 justify-end" : " justify-center pt-20"
+              showHuevito
+                ? "pt-6 justify-end items-start"
+                : " justify-center pt-20"
             } `}
           >
             <img
               src={"/tortuga/habitat/btnInterro.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out hover:scale-[1.1] ${
                 showHuevito
                   ? " transition-all w-0 h-0 "
                   : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[12vh] min-h-[12vh] "
@@ -119,7 +123,7 @@ const Amenaza = () => {
               src={"/tortuga/amenaza/causas.png"}
               className={`relative top-[50px] z-5 transition-all duration-500 ease-in-out right-[80px]  ${
                 showHuevito
-                  ? " transition-all  w-[28vw] min-w-[28vw] h-[36vh] min-h-[36vh] "
+                  ? " transition-all  w-[26vw] min-w-[26vw] h-[36vh] min-h-[36vh] "
                   : "opacity-100  w-0 h-0 mt-0"
               }`}
             />

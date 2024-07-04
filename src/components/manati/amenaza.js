@@ -89,7 +89,7 @@ const Amenaza = () => {
            */}
           <div
             className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
-              showComoSoy ? "pt-6" : "pt-20"
+              showComoSoy ? "pt-6 items-center" : "pt-20"
             } `}
           >
             <img
@@ -146,7 +146,7 @@ const Amenaza = () => {
            */}
           <div
             className={`flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
-              showHuevito ? "pt-6" : "pt-20"
+              showHuevito ? "pt-6 items-center" : "pt-20"
             } `}
           >
             <img
@@ -184,7 +184,7 @@ const Amenaza = () => {
             <div className="min-h-[166px] flex items-center justify">
               <img
                 src={"/manati/amenaza/escala.png"}
-                className={`relative bottom-[60px] z-10 transition-all duration-500 ease-in-out hover:scale-[1.05] ${
+                className={`relative bottom-[20px] z-10 transition-all duration-500 ease-in-out hover:scale-[1.05] ${
                   showHeart
                     ? "  w-0 h-0"
                     : "opacity-100 hover:cursor-pointer w-[90vw] min-w-[90vw] h-[8vh] min-h-[8vh] "
@@ -195,7 +195,7 @@ const Amenaza = () => {
             <div className="min-h-[166px] flex items-center justify">
               <Image
                 src={"/manati/amenaza/escala.gif"}
-                className={`relative bottom-[60px] z-10  duration-500 ease-in-out  ${
+                className={`relative bottom-[20px] z-10  duration-500 ease-in-out  ${
                   showHeart
                     ? " transition-all  w-[90vw] min-w-[90vw] h-[20vh] min-h-[20vh] "
                     : "opacity-0  w-0 h-0 "
