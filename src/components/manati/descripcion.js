@@ -14,7 +14,7 @@ const Descripcion = () => {
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={`${showMenu ? "/manati/cerrarMenu.png" : "/manati/menu.png"}`}
-          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+          className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
@@ -25,31 +25,30 @@ const Descripcion = () => {
             showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
-          {" "}
           <img
             src={"/btnMenuHome.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/");
             }}
           />
           <img
             src={"/tortuga/btnTortuga.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/tortuga");
             }}
           />
           <img
             src={"/tortuga/btnCardenal.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/cardenalito");
             }}
           />
           <img
             src={"/tortuga/btnMapache.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/mapache");
             }}
@@ -149,19 +148,19 @@ const Descripcion = () => {
             <Link href={"?q="}>
               <img
                 src={"/manati/btnRetroceder.png"}
-                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q="}>
               <img
                 src={"/manati/btnHome.png"}
-                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q=habitat"}>
               <img
                 src={"/manati/btnAvanzar.png"}
-                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
           </div>

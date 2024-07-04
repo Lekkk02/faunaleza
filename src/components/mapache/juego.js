@@ -83,19 +83,19 @@ const Juego = () => {
                 <Link href={"?q=amenaza"}>
                   <img
                     src={"/descript/Retroceder.png"}
-                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                    className="w-auto h-[10vh] min-h-[10vh]  mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
                   />
                 </Link>
                 <Link href={"?q="}>
                   <img
                     src={"/descript/Inicio.png"}
-                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                    className="w-auto h-[10vh] min-h-[10vh]  mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
                   />
                 </Link>
                 <Link href={"?q="}>
                   <img
                     src={"/descript/Avanzar.png"}
-                    className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                    className="w-auto h-[10vh] min-h-[10vh] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
                   />
                 </Link>
               </div>

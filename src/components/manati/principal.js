@@ -10,7 +10,7 @@ const Principal = () => {
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={`${showMenu ? "/manati/cerrarMenu.png" : "/manati/menu.png"}`}
-          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+          className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
@@ -23,28 +23,28 @@ const Principal = () => {
         >
           <img
             src={"/btnMenuHome.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/");
             }}
           />
           <img
             src={"/tortuga/btnTortuga.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/tortuga");
             }}
           />
           <img
             src={"/tortuga/btnCardenal.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/cardenalito");
             }}
           />
           <img
             src={"/tortuga/btnMapache.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/mapache");
             }}
@@ -82,7 +82,7 @@ const Principal = () => {
           </div>
           <div className="flex flex-1 relative items-center justify-center  ">
             <Image
-              className="relative right-[-50px] w-[20vw]  max-w-[20vw] h-[50vh] min-h-[50vh] "
+              className="relative right-[-50px] bottom-[60px] w-[22vw]  max-w-[22vw] h-[55vh] min-h-[55vh] "
               src={"/manati/manati.gif"}
               height={50}
               width={50}

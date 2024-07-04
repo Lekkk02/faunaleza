@@ -14,7 +14,7 @@ const Habitat = () => {
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={`${showMenu ? "/mapache/btnCerrar.png" : "/tito/menu/menu.png"}`}
-          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+          className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
@@ -25,30 +25,31 @@ const Habitat = () => {
             showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
+          {" "}
           <img
             src={"/btnMenuHome.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh]  mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/");
             }}
           />
           <img
             src={"/tortuga/btnTortuga.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh]  mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/tortuga");
             }}
           />
           <img
             src={"/tortuga/btnManati.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh]  mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/manati");
             }}
           />
           <img
             src={"/tortuga/btnCardenal.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh]  mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/cardenalito");
             }}
@@ -57,10 +58,10 @@ const Habitat = () => {
       </div>
       <div className="flex justify-between overflow-hidden">
         <div className="flex flex-col items-center justify-center min-h-[100vh] w-[25vw] min-w-[25vw] max-w-[25vw]">
-          <div className="flex flex-col flex-1 w-full items-start justify-start relative  ">
+          <div className="flex flex-col flex-1 w-full items-start justify-center relative  ">
             <Image
-              src={"/mapache/mapachePrincipal.gif"}
-              className={`relative w-[30vw] min-w-[30vw] h-[50vh] min-h-[50vh] left-[-200px] rotate-45  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              src={"/mapache/habitat/machepa_ramita.gif"}
+              className={`relative w-[41vw] min-w-[41vw] h-[35vh] min-h-[35vh] left-[-180px]  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
                 showComoSoy
                   ? " transition-all "
                   : "opacity-100 hover:cursor-pointer"
@@ -71,7 +72,7 @@ const Habitat = () => {
             />
           </div>
 
-          <div className="flex  flex-1 relative items-center justify-center ">
+          <div className="flex  flex-1 relative items-start justify-center ">
             <img
               src="/mapache/habitat/ubi1.png"
               className={`w-[20vw] min-w-[20vw] h-[35vh] min-h-[35vh] z-10  left-[60px] relative  transition-all duration-500 ease-in-out ${
@@ -115,10 +116,10 @@ const Habitat = () => {
             <div className="relative right-[100px] flex flex-1 ">
               <img
                 src={"/mapache/habitat/termometro.png"}
-                className={`self-start items-start justify-start ${
+                className={`self-start items-start justify-start transition-transform duration-500 ease-in-out  ${
                   showHuevito
                     ? "opacity-0 h-0 w-0"
-                    : "w-[6vw] min-w-[6vw] h-[16vh] min-h-[16vh] relative top-[-100px]"
+                    : " cursor-pointer hover:scale-[1.10] w-[6vw] min-w-[6vw] h-[16vh] min-h-[16vh] relative top-[-100px]"
                 }
                `}
                 onClick={() => setShowHuevito(true)}
@@ -139,19 +140,19 @@ const Habitat = () => {
             <Link href={"?q=descript"}>
               <img
                 src={"/descript/Retroceder.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh]   relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q="}>
               <img
                 src={"/descript/Inicio.png"}
-                className="w-auto h-[60px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q=amenaza"}>
               <img
                 src={"/descript/Avanzar.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh]   relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
           </div>
@@ -199,10 +200,10 @@ const Habitat = () => {
               />
               <div className="flex  flex-1 relative items-center justify-center ">
                 <img
-                  src="/tito/hab/ubi2.png"
+                  src="/mapache/habitat/ubi2.png"
                   className={` z-10   relative  transition-all duration-500 ease-in-out ${
                     showHeart
-                      ? "opacity-100 translate-x-0 w-[20vw] min-w-[20vw] h-[35vh] min-h-[35vh]"
+                      ? "opacity-100 translate-x-0 w-[20vw] min-w-[20vw] h-[40vh] min-h-[40vh]"
                       : "opacity-0 h-0 w-0"
                   }`}
                 />

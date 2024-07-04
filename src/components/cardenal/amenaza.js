@@ -15,7 +15,7 @@ const Amenaza = () => {
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={`${showMenu ? "/mapache/btnCerrar.png" : "/tito/menu/menu.png"}`}
-          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+          className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
@@ -28,28 +28,28 @@ const Amenaza = () => {
         >
           <img
             src={"/btnMenuHome.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/");
             }}
           />
           <img
             src={"/tortuga/btnTortuga.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/tortuga");
             }}
           />
           <img
             src={"/tortuga/btnManati.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/manati");
             }}
           />
           <img
             src={"/tortuga/btnMapache.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/mapache");
             }}
@@ -58,27 +58,29 @@ const Amenaza = () => {
       </div>
 
       <div className="flex flex-col px-16 py-8 min-h-[100vh]">
-        <div className="flex max-h-[60vh] h-[60vh]">
+        <div className="flex max-h-[60vh] h-[60vh] ">
           {/*             SECCION IZQUIERDA
            */}
           <div
-            className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
-              showComoSoy ? "pt-6" : "pt-20"
+            className={` flex-1  transition-all  ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  ${
+              showComoSoy
+                ? "pt-6 justify-end items-center"
+                : "pt-20 justify-center "
             } `}
           >
             <img
               src={"/tito/amenaza/btn_cap.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out hover:scale-[1.1] ${
                 showComoSoy
                   ? " transition-all w-0 h-0"
-                  : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[12vh] min-h-[12vh] "
+                  : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[14vh] min-h-[14vh] "
               }`}
               onClick={() => setShowComoSoy(true)}
             />
 
             <img
               src={"/tito/amenaza/captura_graf.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out  ${
+              className={`relative   z-10 transition-all duration-500 ease-in-out  ${
                 showComoSoy
                   ? " transition-all  w-[18vw] min-w-[18vw] h-[36vh] min-h-[36vh] "
                   : "opacity-100  w-0 h-0 "
@@ -95,7 +97,7 @@ const Amenaza = () => {
             />
             <Image
               src={"/tito/amenaza/cardenalito.gif"}
-              className="w-[20vw] min-w[20vw] h-[30vh] min-h-[30vh]"
+              className="w-[27vw] min-w[27vw] h-[40vh] min-h-[40vh]"
               width={50}
               height={50}
             />
@@ -103,23 +105,23 @@ const Amenaza = () => {
           {/*           SECCION DERECHA
            */}
           <div
-            className={` flex-1 transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
-              showHuevito ? "pt-6" : "pt-20"
+            className={` flex-1  transition-all ease-in-out duration-500 w-[25vh] min-w[25vh] h-[70vh] min-h-[70vh] flex  justify-center ${
+              showHuevito ? "pt-6 items-center" : "pt-20"
             } `}
           >
             <img
               src={"/tito/amenaza/btn_causa.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative  z-10 transition-opacity transition-transform duration-500 ease-in-out hover:scale-[1.1] ${
                 showHuevito
                   ? " transition-all w-0 h-0 "
-                  : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[12vh] min-h-[12vh] "
+                  : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[14vh] min-h-[14vh]"
               }`}
               onClick={() => setShowHuevito(true)}
             />
 
             <img
               src={"/tito/amenaza/causas.png"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out  ${
+              className={`relative    z-10 transition-all duration-500 ease-in-out  ${
                 showHuevito
                   ? " transition-all  w-[18vw] min-w-[18vw] h-[36vh] min-h-[36vh] "
                   : "opacity-100  w-0 h-0 mt-0"
@@ -157,19 +159,19 @@ const Amenaza = () => {
             <Link href={"?q=habitat"}>
               <img
                 src={"/descript/Retroceder.png"}
-                className="w-auto h-[60px] relative  hover:scale-[1.2] transition-all duration-500 z-50"
+                className="w-auto h-[10vh] min-h-[10vh] relative  hover:scale-[1.2] transition-all duration-500 z-50"
               />
             </Link>
             <Link href={"?q="}>
               <img
                 src={"/descript/Inicio.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500 z-50"
+                className="w-auto h-[10vh] min-h-[10vh] relative  hover:scale-[1.2] transition-all duration-500 z-50"
               />
             </Link>
             <Link href={"?q=juego"}>
               <img
                 src={"/descript/Avanzar.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500 z-50"
+                className="w-auto h-[10vh] min-h-[10vh]  relative  hover:scale-[1.2] transition-all duration-500 z-50"
               />
             </Link>
           </div>

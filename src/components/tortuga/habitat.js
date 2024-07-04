@@ -14,7 +14,7 @@ const Habitat = () => {
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={`${showMenu ? "/tortuga/cerrarMenu.png" : "/tortuga/menu.png"}`}
-          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+          className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
@@ -25,31 +25,30 @@ const Habitat = () => {
             showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
-          {" "}
           <img
             src={"/btnMenuHome.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/");
             }}
           />
           <img
             src={"/tortuga/btnCardenal.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/cardenalito");
             }}
           />
           <img
             src={"/tortuga/btnManati.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/manati");
             }}
           />
           <img
             src={"/tortuga/btnMapache.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/mapache");
             }}
@@ -148,19 +147,19 @@ const Habitat = () => {
             <Link href={"?q=descript"}>
               <img
                 src={"/tortuga/btnRetroceder.png"}
-                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q="}>
               <img
                 src={"/tortuga/btnHome.png"}
-                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh]  mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q=amenaza"}>
               <img
                 src={"/tortuga/btnAvanzar.png"}
-                className="w-auto h-[60px] mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh]  mt-[10px] relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
           </div>
@@ -197,9 +196,9 @@ const Habitat = () => {
             <div className="flex  flex-1 relative  ">
               <img
                 src={"/tortuga/habitat/txtAbajo.png"}
-                className={`relative right z-10 transition-all duration-500 ease-in-out hover:scale-[1.2] ${
+                className={`relative right z-10 transition-all duration-500 ease-in-out ${
                   showAlimentacion
-                    ? "opacity-100 hover:cursor-pointer w-[19vw] min-w-[19vw] h-[40vh] min-h-[40vh] z-10"
+                    ? "opacity-100  w-[19vw] min-w-[19vw] h-[30vh] min-h-[30vh] z-10"
                     : "opacity-0 w-0 max-w-0 min-w-0 h-0 max-h-0 min-h-0"
                 }`}
                 onClick={() => setShowAlimentacion(true)}

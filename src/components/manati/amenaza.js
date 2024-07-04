@@ -41,7 +41,7 @@ const Amenaza = () => {
       <div className="flex flex-col absolute top-4 left-4 z-50">
         <img
           src={`${showMenu ? "/manati/cerrarMenu.png" : "/manati/menu.png"}`}
-          className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+          className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
           onClick={() => {
             setShowMenu(!showMenu);
             console.log("clicked menu from layout.js");
@@ -52,31 +52,30 @@ const Amenaza = () => {
             showMenu ? "max-h-[300px]" : "max-h-0"
           }`}
         >
-          {" "}
           <img
             src={"/btnMenuHome.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/");
             }}
           />
           <img
             src={"/tortuga/btnTortuga.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/tortuga");
             }}
           />
           <img
             src={"/tortuga/btnCardenal.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/cardenalito");
             }}
           />
           <img
             src={"/tortuga/btnMapache.png"}
-            className="w-[5vw] min-w-[5vw] h-[8vh] min-h-[8vh] mt-[10px] relative cursor-pointer"
+            className="w-[4vw] min-w-[4vw] h-[7vh] min-h-[7vh] mt-[10px] relative cursor-pointer"
             onClick={() => {
               router.push("/mapache");
             }}
@@ -95,31 +94,37 @@ const Amenaza = () => {
           >
             <img
               src={"/manati/amenaza/btnAmenaza.png"}
-              className={`relative  z-10 transition-opacity duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative transition-transform z-10 transition-opacity duration-500 ease-in-out hover:scale-[1.1] ${
                 showComoSoy
                   ? " transition-all w-0 h-0"
                   : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[12vh] min-h-[12vh] "
               }`}
               onClick={() => setShowComoSoy(true)}
             />
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-8 items-center">
+              <img
+                src={"/manati/amenaza/hay_3_especies.png"}
+                className={`relative  z-10 transition-all duration-500 ease-in-out  ${
+                  showComoSoy
+                    ? " transition-all  w-[18vw] min-w-[18vw] h-[8vh] min-h-[8vh] "
+                    : "opacity-100  w-0 h-0 "
+                }`}
+              />
               <img
                 src={"/manati/amenaza/manatiLinea.png"}
                 className={`relative  z-10 transition-all duration-500 ease-in-out  ${
                   showComoSoy
-                    ? " transition-all  w-[18vw] min-w-[18vw] h-[28vh] min-h-[28vh] "
+                    ? " transition-all  w-[18vw] min-w-[18vw] h-[22vh] min-h-[22vh] "
                     : "opacity-100  w-0 h-0 "
                 }`}
-                onClick={() => setShowComoSoy(true)}
               />
               <img
                 src={"/manati/amenaza/catalog.png"}
                 className={`relative  z-10 transition-all duration-500 ease-in-out  ${
                   showComoSoy
-                    ? " transition-all  w-[18vw] min-w-[18vw] h-[9vh] min-h-[9vh] "
+                    ? " transition-all  w-[18vw] min-w-[18vw] h-[8vh] min-h-[8vh] "
                     : "opacity-100  w-0 h-0 "
                 }`}
-                onClick={() => setShowComoSoy(true)}
               />
             </div>
           </div>
@@ -132,7 +137,7 @@ const Amenaza = () => {
             />
             <Image
               src={"/manati/amenaza/manati.gif"}
-              className="w-[30vw] min-w[30vw] h-[25vh] min-h-[25vh] z-10"
+              className="w-[36vw] min-w[36vw] h-[30vh] min-h-[30vh] z-10"
               width={50}
               height={50}
             />
@@ -146,7 +151,7 @@ const Amenaza = () => {
           >
             <img
               src={"/manati/amenaza/btnAmenaza.png"}
-              className={`relative  z-10 transition-opacity  duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative transition-transform z-10 transition-opacity  duration-500 ease-in-out hover:scale-[1.1] ${
                 showHuevito
                   ? " transition-all w-0 h-0 "
                   : "opacity-100 hover:cursor-pointer w-[8vw] min-w-[8vw] h-[12vh] min-h-[12vh] "
@@ -174,12 +179,12 @@ const Amenaza = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-between items-center">
           <div className="flex ">
-            <div className="min-h-[166px] flex items-center">
+            <div className="min-h-[166px] flex items-center justify">
               <img
                 src={"/manati/amenaza/escala.png"}
-                className={`relative  z-10 hover:scale-[1.05] ${
+                className={`relative bottom-[60px] z-10 transition-all duration-500 ease-in-out hover:scale-[1.05] ${
                   showHeart
                     ? "  w-0 h-0"
                     : "opacity-100 hover:cursor-pointer w-[90vw] min-w-[90vw] h-[8vh] min-h-[8vh] "
@@ -187,36 +192,37 @@ const Amenaza = () => {
                 onClick={() => setShowHeart(true)}
               />
             </div>
-
-            <Image
-              src={"/manati/amenaza/escala.gif"}
-              className={`relative  z-10 transition-all duration-500 ease-in-out  ${
-                showHeart
-                  ? " transition-all  w-[90vw] min-w-[90vw] h-[20vh] min-h-[20vh] "
-                  : "opacity-0  w-0 h-0 "
-              }`}
-              width={50}
-              height={50}
-            />
+            <div className="min-h-[166px] flex items-center justify">
+              <Image
+                src={"/manati/amenaza/escala.gif"}
+                className={`relative bottom-[60px] z-10  duration-500 ease-in-out  ${
+                  showHeart
+                    ? " transition-all  w-[90vw] min-w-[90vw] h-[20vh] min-h-[20vh] "
+                    : "opacity-0  w-0 h-0 "
+                }`}
+                width={50}
+                height={50}
+              />
+            </div>
           </div>
 
           <div className="flex  gap-8">
             <Link href={"?q=habitat"}>
               <img
                 src={"/manati/btnRetroceder.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh]  relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q="}>
               <img
                 src={"/manati/btnHome.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh]  relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
             <Link href={"?q=juego"}>
               <img
                 src={"/manati/btnAvanzar.png"}
-                className="w-auto h-[60px]  relative  hover:scale-[1.2] transition-all duration-500"
+                className="w-auto h-[10vh] min-h-[10vh]  relative  hover:scale-[1.2] transition-all duration-500"
               />
             </Link>
           </div>
