@@ -68,7 +68,7 @@ const Principal = () => {
             <div className="flex items-center justify-end relative left-[140px]  group">
               <img src="/manati/btnHabitat.png" className="w-[120px] z-10" />
               <p className="opacity-0 relative left-[-2px]   transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#ec6255] rounded-r-xl text-white font-[Poppins] text-2xl">
-                Habitat
+                Hábitat
               </p>
             </div>
           </Link>
@@ -89,7 +89,7 @@ const Principal = () => {
             />
             <img
               src={"/manati/textoManati.png"}
-              className="relative   h-[150px] w-[200px] bottom-[80px]"
+              className="relative   h-[15vh] w-[20vw] bottom-[80px]"
             />
           </div>
         </div>

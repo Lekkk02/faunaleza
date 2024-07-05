@@ -78,7 +78,7 @@ const Amenaza = () => {
 
             <img
               src={"/tortuga/amenaza/evo_cap.png"}
-              className={`relative top-[50px]  z-5 transition-all duration-500 ease-in-out  ${
+              className={`relative top-[70px]  z-5 transition-all duration-500 ease-in-out  ${
                 showComoSoy
                   ? " transition-all  w-[20vw] min-w-[20vw] h-[40vh] min-h-[40vh] "
                   : "opacity-100  w-0 h-0 "
@@ -121,7 +121,7 @@ const Amenaza = () => {
 
             <img
               src={"/tortuga/amenaza/causas.png"}
-              className={`relative top-[50px] z-5 transition-all duration-500 ease-in-out right-[80px]  ${
+              className={`relative top-[70px] z-5 transition-all duration-500 ease-in-out right-[80px]  ${
                 showHuevito
                   ? " transition-all  w-[26vw] min-w-[26vw] h-[36vh] min-h-[36vh] "
                   : "opacity-100  w-0 h-0 mt-0"

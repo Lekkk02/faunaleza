@@ -101,7 +101,7 @@ const Descripcion = () => {
               src="/tortuga/descripcion/txtTortuga.png"
               className={`w-[10vw] min-w-[10vw] h-[35vh] min-h-[35vh] z-[5] mt-[20px] relative  right-[100px] transition-all duration-500 ease-in-out ${
                 showHeart
-                  ? "w-[10vw] min-w-[10vw] h-[25vh] min-h-[25vh] opacity-100 translate-x-0"
+                  ? "w-[14vw] min-w-[14vw] h-[30vh] min-h-[30vh] opacity-100 translate-x-0"
                   : "opacity-0 w-0 h-0"
               }`}
             />

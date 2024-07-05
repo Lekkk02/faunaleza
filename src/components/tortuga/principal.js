@@ -72,7 +72,7 @@ const Principal = () => {
                 className="w-[110px] z-[10] "
               />
               <p className="z-[5] opacity-0 relative top-[8px]   transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-[#94ac3a] rounded-r-xl text-white font-[Poppins] text-2xl">
-                Habitat
+                Hábitat
               </p>
             </div>
           </Link>

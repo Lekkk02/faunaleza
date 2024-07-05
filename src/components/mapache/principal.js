@@ -55,7 +55,7 @@ const Principal = () => {
       <div className="flex justify-between ]">
         <div className="flex flex-col justify-center gap-36">
           <Link href={"?q=descript"}>
-            <div className="flex items-center justify-end relative left-[190px] top-[-40px] group">
+            <div className="flex items-center justify-end relative left-[190px] group">
               <img src="/mapache/BotonDescript.png" className="w-[145px] " />
               <p className="opacity-0 relative left-[-10px] transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-r-xl text-white font-[Poppins] text-2xl">
                 Descripción
@@ -63,10 +63,10 @@ const Principal = () => {
             </div>
           </Link>
           <Link href={"?q=habitat"}>
-            <div className="flex items-center justify-end relative left-[140px] top-[-50px] group">
+            <div className="flex items-center justify-end relative left-[140px]  group">
               <img src="/mapache/BotonHabitat.png" className="w-[145px] " />
               <p className="opacity-0 relative left-[-10px] transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-r-xl text-white font-[Poppins] text-2xl">
-                Habitat
+                Hábitat
               </p>
             </div>
           </Link>

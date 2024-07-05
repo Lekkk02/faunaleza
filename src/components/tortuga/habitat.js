@@ -60,7 +60,7 @@ const Habitat = () => {
           <div className="flex flex-col flex-1 w-full items-center justify-center relative  ">
             <Image
               src={"/tortuga/habitat/tortuga.gif"}
-              className={`relative w-[20vw] min-w-[20vw] h-[20vh] min-h-[20vh]  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
+              className={`relative left-[80px] w-[20vw] min-w-[20vw] h-[20vh] min-h-[20vh]  z-10 transition-all duration-500 ease-in-out hover:scale-[1.1] ${
                 showComoSoy
                   ? " transition-all "
                   : "opacity-100 hover:cursor-pointer"
@@ -198,7 +198,7 @@ const Habitat = () => {
                 src={"/tortuga/habitat/txtAbajo.png"}
                 className={`relative right z-10 transition-all duration-500 ease-in-out ${
                   showAlimentacion
-                    ? "opacity-100 top-[50px] w-[19vw] min-w-[19vw] h-[30vh] min-h-[30vh] z-10"
+                    ? "opacity-100 top-[50px] w-[19vw] min-w-[19vw] h-[25vh] min-h-[25vh] z-10"
                     : "opacity-0 w-0 max-w-0 min-w-0 h-0 max-h-0 min-h-0"
                 }`}
                 onClick={() => setShowAlimentacion(true)}

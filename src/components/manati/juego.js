@@ -74,8 +74,7 @@ const Juego = () => {
               <div className="flex flex-col justify-center items-center">
                 <img
                   src={"/manati/juegomanati.gif"}
-                  className="custom-manati mt-[19vh] absolute top-[7px]
-            "
+                  className="custom-manati mt-[19vh] absolute top-[30px]"
                 />
               </div>
               <div className="flex mb-16 gap-8">

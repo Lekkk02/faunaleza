@@ -66,7 +66,7 @@ const Principal = () => {
             <div className="flex items-center group">
               <img src="/descript/ramahabitat.png" className="w-[300px] " />
               <p className="relative top-[-14px] opacity-0 transform translate-x-[-16px] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 p-[8px] bg-naranja rounded-r-xl text-white font-[Poppins] text-2xl">
-                Habitat
+                Hábitat
               </p>
             </div>
           </Link>
