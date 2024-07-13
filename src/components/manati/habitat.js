@@ -123,7 +123,7 @@ const Habitat = () => {
                 className={`self-start items-start justify-start  hover:scale-[1.2] transition-transform duration-500 z-50 ${
                   showHuevito
                     ? "opacity-0 h-0 w-0"
-                    : "w-[4vw] min-w-[4vw] h-[14vh] min-h-[14vh] relative top-[-100px]"
+                    : "w-[4vw] min-w-[4vw] cursor-pointer h-[14vh] min-h-[14vh] relative top-[-100px]"
                 }
                `}
                 onClick={() => setShowHuevito(true)}
